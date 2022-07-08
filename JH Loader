@@ -1,0 +1,780 @@
+    -- Jaguar Hub Version 3.2.1x Discord Lib
+
+    wait (0.01)
+
+    local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord"))()
+    local window = library:Window("Jaguar Hub Version 3.2.1x")
+
+
+    -- Main
+
+    game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Checking Version = 3.2.1x", Icon = "rbxassetid://9964802419", Duration = 4})
+    wait(0.06)
+    game.StarterGui:SetCore("SendNotification", {Title = "Jaguar On Top!!", Text = "Loading In Progress ...", Icon = "rbxassetid://9964802419", Duration = 4})
+    wait (0.04)
+    game.StarterGui:SetCore("SendNotification", {Title = "Enjoy ❤", Text = "Finished Loading!", Icon = "rbxassetid://9964802419", Duration = 4})
+    wait (0.02)
+
+    local Tab = window:Server("Jaguar Hub", "rbxassetid://9964802419")
+    local MainSection = Tab:Channel("Other Scripts")
+    MainSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    end)
+    MainSection:Label("All Working As Of Right Now", function(v)
+    end)
+    MainSection:Button("🟩BobloxScripts", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading BobloxScripts", Text = "Boblox Scripts Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter/BobloxScripts/main/loader"))()
+    end)
+    MainSection:Button("🟩Dex Explorer", function(v)
+        loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
+    end)
+    MainSection:Button("🟩Big Head (Requires R15 and Rthro Head!)", function(v)
+    --Shit ass script made by failedmite57926
+
+    local LocalPlayer = game:GetService("Players").LocalPlayer
+    local Character = LocalPlayer.Character
+    local Humanoid = Character:FindFirstChildOfClass("Humanoid")
+
+    function rm()
+        for i,v in pairs(Character:GetDescendants()) do
+            if v:IsA("BasePart") then
+                if v.Name == "Handle" or v.Name == "Head" then
+                    if Character.Head:FindFirstChild("OriginalSize") then
+                        Character.Head.OriginalSize:Destroy()
+                    end
+                else
+                    for i,cav in pairs(v:GetDescendants()) do
+                        if cav:IsA("Attachment") then
+                            if cav:FindFirstChild("OriginalPosition") then
+                                cav.OriginalPosition:Destroy()  
+                            end
+                        end
+                    end
+                    v:FindFirstChild("OriginalSize"):Destroy()
+                    if v:FindFirstChild("AvatarPartScaleType") then
+                        v:FindFirstChild("AvatarPartScaleType"):Destroy()
+                    end
+                end
+            end
+        end
+    end
+
+    rm()
+    wait(0.5)
+    Humanoid:FindFirstChild("BodyProportionScale"):Destroy()
+    wait(1)
+
+    rm()
+    wait(0.5)
+    Humanoid:FindFirstChild("BodyHeightScale"):Destroy()
+    wait(1)
+
+    rm()
+    wait(0.5)
+    Humanoid:FindFirstChild("BodyWidthScale"):Destroy()
+    wait(1)
+
+    rm()
+    wait(0.5)
+    Humanoid:FindFirstChild("BodyDepthScale"):Destroy()
+    wait(1)
+
+    rm()
+    wait(0.5)
+    Humanoid:FindFirstChild("HeadScale"):Destroy()
+    wait(1)
+    end)
+    MainSection:Button("🟩Inf Jump", function(v)
+    local InfiniteJumpEnabled = true
+    game:GetService("UserInputService").JumpRequest:connect(function()
+            if InfiniteJumpEnabled then
+                game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+            end
+        end)
+    end)
+    MainSection:Button("🟩Fe Animations", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/RubyBoo4life/Scripts/main/animations.vis'))()
+    end)
+    MainSection:Button("🟩Inf yield", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end)
+    MainSection:Button("🟩Cmd X", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+    end)
+    MainSection:Button("🟩Fates Admin", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
+    end)
+    MainSection:Button("🟩Reviz Admin", function(v)
+        loadstring(game:HttpGet(('https://pastebin.com/raw/pyzjWNhk'),true))()
+    end)
+    MainSection:Button("🟩R6 Admin", function(v)
+        loadstring(game:HttpGet("https://pastebin.com/raw/CKbPg9NC", true))()
+    end)
+
+    -- Mining Simulator 2
+
+
+    local MiningSim2Section = Tab:Channel("Mining Simulator 2")
+    MiningSim2Section:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    end)
+    MiningSim2Section:Button("🟩 Zeerox Rewrite Gui (Highly Recommended For AFK Farming)", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading Zeerox Gui", Text = "Zeerox Gui Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/miningsim2/main/rewrite.lua')()
+    end)
+    MiningSim2Section:Button("🟩 Zeerox Gui (Old And Buggy)", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading Zeerox Gui", Text = "Old Zeerox Gui Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet'https://github.com/RunDTM/miningsim2/raw/main/script.lua')()
+    end)
+    MiningSim2Section:Button("🟩 System Exodus (Highly Recommended For AFK Farming)", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading System Exodus", Text = "System Exodus Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet("https://system-exodus.com/scripts/MiningSimulator/MiningSimulator2.lua", true))()
+    end)
+    MiningSim2Section:Button("🟩 Kelp (Highly Recommended For AFK Farming)", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading Kelp", Text = "Kelp Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TSQ-new/KelpHub/main/Mining%20Simulator%202"))()
+    end)
+    MiningSim2Section:Button("🟩 Vestra Hub (Highly Recommended For AFK Farming)", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading Vestra Hub", Text = "Vestra Hub Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet("https://script.vestrahub.com"))()
+    end)
+    MiningSim2Section:Button("🟩 Strlizia Gui (Highly Recommended For AFK Farming)", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading Strlizia", Text = "Strlizia Gui Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Strelizia22/Strelizia/main/MS2Main.lua", true))()
+    end)
+    MiningSim2Section:Button("🟩 MasterHub (NEW! Highly Recommended For AFK Farming)", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading MasterHub", Text = "Master Hub Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/destylol/masterhubv311/itachi/Main.lua"))()
+    end)
+    MiningSim2Section:Button("🟩 Saza Hub V2 (Highly Recommended For Eggs)", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading Saza Hub V2", Text = "Saza Hub V2 Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-DonateMe-3327"))()SZInjected(SZLoader)()
+    end)
+    MiningSim2Section:Button("🟩 Extreme Hub (Key) (NEW UI AND SUCH THINGS)", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading Extreme Hub", Text = "Extreme Hub Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ExtremeAntonis/KeySystemUI/main/KeySystemUI-Obfuscated.lua"))()
+    end)
+    MiningSim2Section:Button("🟧 HugeGames (Currently Down And Getting A Whole Rewrite)", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading HugeGames", Text = "HugeGames Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        _G.AuthKey="HUGE_5ZRZJOyQX1UW124G"
+        loadstring(game:HttpGet("https://HugeGames.io/rewrite"))()
+    end)
+    MiningSim2Section:Button("🟩 SoggyWare (Highly Recommended For AFK Farming)", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading SoggyWare", Text = "SoggyWare Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet("https://soggyhubv2.vercel.app"))()
+    end)
+    MiningSim2Section:Button("🟩 Project Meow (Buggy Features Still)", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading Project Meow", Text = "Project Meow Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet"https://rawscripts.net/raw/Project-Meow_421")()
+    end)
+
+
+    -- Bedwars
+
+    local BedwarsSection = Tab:Channel("Bedwars")
+    BedwarsSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    end)
+    BedwarsSection:Button("🟩Vape V4", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading VapeV4", Text = "Vape4 Loading Shortly", Icon = "rbxassetid://10007425381", Duration = 4})
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+    end)
+    BedwarsSection:Button("🟩Dark Hub (Maybe Working?)", function(v)
+        loadstring(game:HttpGet("https://darkhub.xyz/remote-script.lua", true))()
+    end)
+    BedwarsSection:Button("🟩Future Gui", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading Future", Text = "Future Loading Shortly", Icon = "rbxassetid://10007425381", Duration = 4})
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/joeengo/Future/main/loadstring.lua', true))()
+    end)
+    BedwarsSection:Button("🟩Noboline (New)", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading Noboline", Text = "Noboline Loading Shortly", Icon = "rbxassetid://10007425381", Duration = 4})
+        shared.nobolineupdate = true
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+    end)
+
+    --Clicker Simulator
+
+
+    local ClickerSimSection = Tab:Channel("Clicker Simulator")
+    ClickerSimSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    end)
+    ClickerSimSection:Button("🟩MasterHub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/destylol/masterhubv311/itachi/Main.lua"))()
+    end)
+    ClickerSimSection:Button("🟩LK Hub", function(v)
+        loadstring(game:HttpGet("https://lkhub.net/s/loader.lua"))()
+    end)
+    ClickerSimSection:Button("🟩PeepWare", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NexIsHot/PeepWare/main/Login.lua"))()
+    end)
+    ClickerSimSection:Button("🟩Vestra Hub", function(v)
+        loadstring(game:HttpGet("https://script.vestrahub.com"))()
+    end)
+    ClickerSimSection:Button("🟩Kaoru Hub", function(v)
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Uvxtq/lua/main/Loader.lua"))()
+    end)
+    ClickerSimSection:Button("🟩Mint", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TrustsenseDev/UnknownHub-V1/main/Loader.lua"))()
+    end)
+    ClickerSimSection:Button("🟩Kingdom Hub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TrustsenseDev/Kingdom-Hub/main/MainLoader.lua"))()
+    end)
+    ClickerSimSection:Button("🟩Script.gg", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Kederal/script.gg/main/loader.lua"))()
+    end)
+    ClickerSimSection:Button("🟩Volatile", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tbitw2549/TbitLoader/main/Hub"))()
+    end)
+    ClickerSimSection:Button("🟩Extreme Hub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ExtremeAntonis/KeySystemUI/main/KeySystemUI-Obfuscated.lua"))()
+    end)
+
+    -- Universals
+
+
+    local UniversalSection = Tab:Channel("Universals")
+    UniversalSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    end)
+    UniversalSection:Label("All Working As Of Right Now", function(v)
+    end)
+    UniversalSection:Button("Solaris Hub", function(v)
+        loadstring(game:HttpGet('https://solarishub.net/script.lua',true))()
+    end)
+    UniversalSection:Button("Dark Hub", function(v)
+        loadstring(game:HttpGet("https://darkhub.xyz/remote-script.lua", true))()
+    end)
+    UniversalSection:Button("Evo2", function(v)
+        loadstring(game:HttpGet("https://projectevo.xyz/script/loader.lua"))()
+    end)
+    UniversalSection:Button("Vestra Hub", function(v)
+        loadstring(game:HttpGet("https://script.vestrahub.com"))()
+    end)
+    UniversalSection:Button("Phatom Force Unlock All (New)", function(v)
+        -- made by siper#9938
+
+-- modules
+local network, char, loadgun, loadknife; do
+    for _, object in next, getgc(true) do
+        if (typeof(object) == "table") then
+            if (rawget(object, "send")) then
+                network = object;
+            elseif (rawget(object, "setbasewalkspeed")) then
+                char = object;
+            end
+        elseif (typeof(object) == "function") then
+            local name = debug.getinfo(object).name;
+
+            if (name == "loadgun") then
+                loadgun = object;
+            elseif (name == "loadknife") then
+                loadknife = object;
+            end
+        end
+    end
+end
+
+-- services
+local replicatedStorage = game:GetService("ReplicatedStorage");
+
+-- cache
+local content = replicatedStorage:WaitForChild("Content");
+local productionContent = content:WaitForChild("ProductionContent");
+local attachmentModules = productionContent:WaitForChild("AttachmentModules");
+local gunModules = productionContent:WaitForChild("GunModules");
+
+-- stored data
+local gunIgnore = {"JUGGUN", "HK417Old", "PAINTBALL GUN", "RAILGUN OLD", "PPK12", "SVK12E", "MG42"};
+local weaponData = {};
+local attachmentData = {};
+local primaryClasses = { "ASSAULT", "BATTLE", "CARBINE", "SHOTGUN", "PDW", "DMR", "LMG", "SNIPER" };
+local generalClassData = {
+    ["ASSAULT"] = "AK12",
+    ["BATTLE"] = "AK12",
+    ["CARBINE"] = "M4A1",
+    ["SHOTGUN"] = "KSG 12",
+    ["PDW"] = "MP5K",
+    ["DMR"] = "INTERVENTION",
+    ["LMG"] = "COLT LMG",
+    ["SNIPER"] = "INTERVENTION",
+    ["PISTOL"] = "M9",
+    ["MACHINE PISTOL"] = "M9",
+    ["REVOLVER"] = "M9",
+    ["OTHER"] = "M9",
+    ["FRAGMENTATION"] = "M67 FRAG",
+    ["HIGH EXPLOSIVE"] = "M67 FRAG",
+    ["IMPACT"] = "M67 FRAG",
+    ["ONE HAND BLADE"] = "KNIFE",
+    ["TWO HAND BLADE"] = "KNIFE",
+    ["ONE HAND BLUNT"] = "MAGLITE CLUB",
+    ["TWO HAND BLUNT"] = "HOCKEY STICK",
+};
+local weapons = {};
+
+-- hooks
+do
+    local oldNetworkSend = network.send; network.send = function(self, name, ...)
+        local args = {...};
+
+        if (name == "changewep") then
+            weaponData[args[1]] = args[2];
+            args[2] = generalClassData[weapons[args[2]].type];
+        end
+
+        if (name == "changeatt") then
+            attachmentData[args[2]] = args[3];
+            return
+        end
+
+        return oldNetworkSend(self, name, unpack(args));
+    end
+
+    local oldLoadgrenade = char.loadgrenade; char.loadgrenade = function(self, name, ...)
+        name = weaponData["Grenade"] or name;
+        return oldLoadgrenade(self, name, ...);
+    end;
+
+    local oldLoadknife; oldLoadknife = hookfunction(loadknife, function(name, ...)
+        name = weaponData["Knife"] or name;
+        return oldLoadknife(name, ...);
+    end);
+
+    local oldLoadgun; oldLoadgun = hookfunction(loadgun, function(name, magsize, sparerounds, attachments, ...)
+        local gunData = weapons[name];
+        local newName = table.find(primaryClasses, gunData.type) and weaponData["Primary"] or weaponData["Secondary"];
+
+        name = (newName and newName or name);
+
+        local attachs = attachmentData[name];
+
+        if (attachs) then
+            attachments = attachs;
+        end
+
+        return oldLoadgun(name, magsize, sparerounds, attachments, ...);
+    end);
+end
+
+-- init
+do
+    for _, module in next, gunModules:GetChildren() do
+        if (not table.find(gunIgnore, module.Name)) then
+            local data = require(module);
+            weapons[module.Name] = data;
+        end
+    end
+
+    for _, module in next, attachmentModules:GetChildren() do
+        local data = require(module);
+        data.unlockkills = 0;
+    end
+
+    for _, module in next, gunModules:GetChildren() do
+        if (not table.find(gunIgnore, module.Name)) then
+            local data = require(module);
+            data.unlockrank = 0;
+            data.adminonly = false;
+            data.supertest = false;
+            data.exclusiveunlock = false;
+            data.hideunlessowned = false;
+        end
+    end
+end
+    end)
+    UniversalSection:Button("Phantom Forces Rage Cheat GUI (New)", function(v)
+        loadstring(game:HttpGet("https://ghostbin.com/EnF6l/raw", true))()
+    end)
+    UniversalSection:Button("Dex Hub", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/HonestlyDex/DexHub/main/Init', true))()
+    end)
+    UniversalSection:Button("Vg Hub", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+    end)
+    UniversalSection:Button("Zyrex Hub", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/NotZyrex/Zyrex-Hub/main/Main.lua', true))();
+    end)
+    UniversalSection:Button("Bolts Hub", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/BoltsHubV5'))()
+    end)
+    UniversalSection:Button("Zephyr X", function(v)
+        pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/ECLIPSEXHUB/ECLIPSE-X/main/ECLIPSE%20X.txt', true))() end)
+    end)
+    UniversalSection:Button("Slient aimbot", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Averiias/Universal-SilentAim/main/main.lua'))()
+    end)
+    UniversalSection:Button("Strawhooks Insane (New)", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/VoidMasterX/strawhook/main/script.lua", true))()
+    end)
+    UniversalSection:Button("Unnamed Esp", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua"))()
+    end)
+    UniversalSection:Button("Universal script Gui", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tehtestedd/ROBLOX/main/Amnesty.lua"))()
+    end)
+    UniversalSection:Button("OwlHub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
+    end)
+    UniversalSection:Button("Sorky", function(v)
+        loadstring(game:HttpGet(('https://pastebin.com/raw/MHx8q6xP'),true))()
+    end)
+    UniversalSection:Button("Parvus", function(v)
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/AlexR32/Parvus/main/Loader.lua"))("Parvus hitting p!")
+    end)
+    UniversalSection:Button("Stefan", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/stefan-rblx/rblx-scripts/main/loader", true))()
+    end)
+    UniversalSection:Button("MonkeHub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeHub/main/Loader.lua"))()
+    end)
+    UniversalSection:Button("Unfair Hub", function(v)
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))()
+    end)
+    UniversalSection:Button("KJHub", function(v)
+        loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/KiJinGaming/FreeScript/main/KJHub.lua"))();
+    end)
+    UniversalSection:Button("Ez Hub", function(v)
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+    end)
+    UniversalSection:Button("ExtremeAntonis", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ExtremeAntonis/KeySystemUI/main/KeySystemUI-Obfuscated.lua"))()
+    end)
+    UniversalSection:Button("Alpha", function(v)
+        loadstring(game:HttpGet("https://pastebin.com/raw/bUmX44UN", true))()
+    end)
+    UniversalSection:Button("Coolprohax", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/Miscellaneous/main/UNIVERSAL.lua"))()
+    end)
+    UniversalSection:Button("Domain x", function(v)
+        loadstring(game:HttpGet('https://shlex.dev/release/domainx/latest.lua',true))()
+    end)
+    UniversalSection:Button("RoxHub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/scripts/main/RoxHub.lua", true))()
+    end)
+    UniversalSection:Button("Alpha", function(v)
+        loadstring(game:HttpGet("https://pastebin.com/raw/bUmX44UN", true))()
+    end)
+    UniversalSection:Button("Bruh Hub", function(v)
+        loadstring(game:HttpGet("https://bruh.keshsenpai.com/.lua"))()
+    end)
+    UniversalSection:Button("kebab Hub", function(v)
+        loadstring(game:HttpGet("www.kebabterminal.tk/main.lua"))()
+    end)
+    UniversalSection:Button("Catix Hub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/quentin452/CATIX-HUB/master/!Catix%20Hub", true))()
+    end)
+    UniversalSection:Button("Phantom Forces GUI", function(v)
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/rajrsansraowar/Lightux/main/README.md'),true))()
+    end)
+
+
+-- Pet Simulator X
+
+
+    local PSXSection = Tab:Channel("Pet Simulator X")
+    PSXSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    end)
+    PSXSection:Button("🟩MasterHub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/destylol/masterhubv311/itachi/Main.lua"))()
+    end)
+    PSXSection:Button("🟩DarkHub", function(v)
+        loadstring(game:HttpGet("https://darkhub.xyz/remote-script.lua", true))()
+    end)
+    PSXSection:Button("🟩Saza Hub V2", function(v)
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-DonateMe-3327"))()SZInjected(SZLoader)()
+    end)
+    PSXSection:Button("🟩Extreme Hub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ExtremeAntonis/KeySystemUI/main/KeySystemUI-Obfuscated.lua"))()
+    end)
+    PSXSection:Button("🟩TR1V5", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TR1V5/TR1V5-V3/main/Main"))()
+    end)
+    PSXSection:Button("🟩LK Hub", function(v)
+        loadstring(game:HttpGet("https://lkhub.net/s/loader.lua"))()
+    end)
+    PSXSection:Button("🟩Project Meow", function(v)
+        loadstring(game:HttpGet"https://raw.githubusercontent.com/L1ZOT/Neverlose/main/Project-Meow_TEMP")()
+    end)
+    PSXSection:Button("🟩BK", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BLACKGAMER1221/Pet-Simulator-X/main/BK%20Pet.lua"))()
+    end)
+    PSXSection:Button("🟩Huge Games", function(v)
+        loadstring(game:HttpGet("https://chatht.ml/script"))()
+    end)
+    PSXSection:Button("🟩Void Hub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Wind596/VoidHub/main/WiningDediy", true))()
+    end)
+    PSXSection:Button("🟩OW Menu", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/inceldom/scrip/main/load",true))()
+    end)
+    PSXSection:Button("🟩Dino Hub", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/script/main/psx'))()
+    end)
+    PSXSection:Button("🟩Xtools", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Boxking776/GrubHub/main/free/PSXFree.lua"))()
+    end)
+    PSXSection:Button("🟩Shiny Tool", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/Shiny-Tool/main/ShinyTool.lua"))()
+    end)
+    PSXSection:Button("🟩VG Hub", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+    end)
+    PSXSection:Button("🟩PetSimX", function(v)
+        loadstring(game:GetObjects("rbxassetid://8194485654")[1].Source)("Petsi-X")
+    end)
+    PSXSection:Button("🟩Uranium Hub", function(v)
+        loadstring(game:HttpGet("https://uraniumhub.tk/storage/script.lua", true))()
+    end)
+    PSXSection:Button("🟩Maxx Hub", function(v)
+        loadstring(game:HttpGet(("https://aizen.ml/uploads/petsimx.txt")))()
+    end)
+    PSXSection:Button("🟩Floppa Hub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Schervi/FloppaHub/main/FloppaHubMain.lua"))()
+    end)
+    PSXSection:Button("🟩AmGeranrd Gui",  function(v)
+        loadstring(game:HttpGet('https://pastebin.com/raw/fttSzNs8'))()
+    end)
+    PSXSection:Button("🟩Nulltrp Gui", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MrKix/nullptrpsx/main/psxloadstring.lua"))()
+    end)
+    PSXSection:Button("🟩Proxo", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/si1nnx/psxx/main/g"))()
+    end)
+    PSXSection:Button("🟩Ez Pet", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua"))()
+    end)
+    PSXSection:Button("🟩kj Hub", function(v)
+        loadstring(game.HttpGet(game,"https://raw.githubusercontent.com/KiJinGaming/FreeScript/main/KJHub.lua"))();
+    end)
+    PSXSection:Button("🟩Mukuro Hub", function(v)
+        loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
+    end)
+    PSXSection:Button("🟩Ghost Hub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRUs/Ryans/main/Ghosthub.lua"))()
+    end)
+    PSXSection:Button("🟩Proxo Hub", function(v)
+        loadstring(game:HttpGet"https://raw.githubusercontent.com/sinnx32/prx/main/Petsim")()
+    end)
+    PSXSection:Button("🟩Black trip", function(v)
+        loadstring(game:HttpGet("https://pastebin.com/raw/BdvUGb2q"))()
+    end)
+    PSXSection:Button("🟩Plasma Hub", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/RubyBoo4life/Scripts/main/LOADER.vis'))()
+    end)
+    PSXSection:Button("🟩Vestra Hub", function(v)
+        loadstring(game:HttpGet("https://script.vestrahub.com"))()
+    end)
+
+-- Goal Kick Simulator
+
+
+    local GoalKickSimSection = Tab:Channel("Goal Kick Simulator")
+    GoalKickSimSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    end)
+    GoalKickSimSection:Label("All Working As Of Right Now", function(v)
+    end)
+    GoalKickSimSection:Button("Extreme Hub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ExtremeAntonis/KeySystemUI/main/KeySystemUI-Obfuscated.lua"))()
+    end)
+    GoalKickSimSection:Button("Jacks Script", function(v)
+        loadstring(game:HttpGet"https://thedragonslayer2.github.io")()
+    end)
+    GoalKickSimSection:Button("Insane69", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/Scripts/main/GoalKickSimulator"))()
+    end)
+    GoalKickSimSection:Button("ShinyTool", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyTool_Key/main/Loader.lua"))()
+    end)
+    GoalKickSimSection:Button("PufferFish", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Cospog/pufferfish/main/goalKick.lua"))()
+    end)
+    GoalKickSimSection:Button("SazaHub", function(v)
+        _G.Color = Color3.fromRGB(255, 255, 255)
+    loadstring(game:HttpGet"https://rawscripts.net/raw/SAZA-HUB_496")()
+    end)
+    GoalKickSimSection:Button("Devil Hub", function(v)
+        pcall(function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Prajon/DEVIL-loader-remake/main/DEVIL-Hub-Script", true))()
+        end)
+    end)
+    GoalKickSimSection:Button("KeyBrew Hub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/borntodiekuv/KeybrewHub/main/Main"))()
+    end)
+    GoalKickSimSection:Button("Unfair Hub", function(v)
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))()
+    end)
+    GoalKickSimSection:Button("BeluseHub", function(v)
+        loadstring(game:HttpGet("https://belusehub.nicuse.repl.co/script", true))()
+    end)
+    GoalKickSimSection:Button("Project Meow", function(v)
+        loadstring(game:HttpGet"https://rawscripts.net/raw/Project-Meow_421")()
+    end)
+
+-- SonicSpeedSimulator
+
+    local SonicSpeedSimulatorSection = Tab:Channel("SonicSpeedSimulator")
+    SonicSpeedSimulatorSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    end)
+    SonicSpeedSimulatorSection:Label("All Working As Of Right Now", function(v)
+    end)
+    SonicSpeedSimulatorSection:Button("🟩MasterHub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/destylol/masterhubv311/itachi/Main.lua"))()
+    end)
+    SonicSpeedSimulatorSection:Button("🟩Devil Hub", function(v)
+        pcall(function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Prajon/DEVIL-loader-remake/main/DEVIL-Hub-Script", true))()
+        end)
+    end)
+    SonicSpeedSimulatorSection:Button("🟩Extreme Hub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ExtremeAntonis/KeySystemUI/main/KeySystemUI-Obfuscated.lua"))()
+    end)
+    SonicSpeedSimulatorSection:Button("🟩SolarisHub", function(v)
+        loadstring(game:HttpGet('https://solarishub.net/script.lua',true))()
+    end)
+    SonicSpeedSimulatorSection:Button("🟩Project Vellerius", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Corrupt2625/pjv/main/Loader.lua"))()
+    end)
+    SonicSpeedSimulatorSection:Button("🟩SRM Hub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/bebedi15/SRM-Scripts/main/Bebedi9960/SRMHub"))()
+    end)
+    SonicSpeedSimulatorSection:Button("🟩King Hub V2", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/King-Hub-v2/main/Loader.lua'))()
+    end)
+
+-- Murder Mystery 2
+
+    local MurderMystery2Section = Tab:Channel("Murder Mystery 2")
+    MurderMystery2Section:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    end)
+    MurderMystery2Section:Label("All Working As Of Right Now", function(v)
+    end)
+    MurderMystery2Section:Button("🟩Eclipse", function(v)
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script'),true))()
+    end)
+    MurderMystery2Section:Button("🟩Eclipse Hub", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/EclipseMM2', true))()
+    end)
+    MurderMystery2Section:Button("🟩XennyWare", function(v)
+        repeat wait() until game.Players.LocalPlayer.Character
+        url = "https://raw.githubusercontent.com/xennyy/Xenny-Ware/main/loader.lua"
+        loadstring(game:HttpGet(url))()
+    end)
+    MurderMystery2Section:Button("🟩Vynixus", function()
+        loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+    end)
+
+    -- SharkBite
+
+    local SharkBiteSection = Tab:Channel("SharkBite")
+    SharkBiteSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    end)
+    SharkBiteSection:Button("🟩Cypher Hub", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/LOOF-sys/Roblox-Shit/main/SharkBite.lua'))()
+    end)
+    SharkBiteSection:Button("🟩Sharkbite GUI", function(v)
+        loadstring(game:HttpGet("https://pastebin.com/raw/YYVLbzVg", true))()
+    end)
+    SharkBiteSection:Button("🟩Trolling Gui", function(v)
+        loadstring(game:HttpGet('https://pastebin.com/raw/AvGHiQkr'))()
+    end)
+
+    -- GameHub SECTION
+
+
+    local GameHubSection = Tab:Channel("GameHub")
+    GameHubSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    end)
+    GameHubSection:Label("All Working As Of Right Now", function(v)
+    end)
+    GameHubSection:Button("Proxima Hub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
+    end)
+    GameHubSection:Button("Universal Hub", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/universal222221121/mama/main/big'))()
+    end)
+    GameHubSection:Button("SRM Hub (Key)", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/bebedi15/SRM-Scripts/main/Bebedi9960/SRMHub"))()
+    end)
+    GameHubSection:Button("(Key) KeyBrew Hub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/borntodiekuv/KeybrewHub/main/Main"))()
+    end)
+    GameHubSection:Button("(Key) Yokes Hub", function(v)
+    _G.key = "" 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xet55/yokes-hub/main/Yokes%20Hub", true))()
+    end)
+    GameHubSection:Button("(Key Link) Yokes Hub", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Key Link Copied!", Text = "Key Link Successfully Copied!", Icon = "", Duration = 4})
+        wait(1)
+        setclipboard("https://linkvertise.com/368118/yokes-hub-key/1")
+    end)
+    GameHubSection:Button("MasterHub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/destylol/masterhubv311/itachi/Main.lua"))()
+    end)
+    GameHubSection:Button("(Key) SolarisHub", function(v)
+        loadstring(game:HttpGet('https://solarishub.net/script.lua',true))()
+    end)
+    GameHubSection:Button("CheesyHub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CheeseyMine/CheeseyHub/main/CheeseyHubV6"))()
+    end)
+    GameHubSection:Button("CreepHub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/VandalRevenge02/SonicSpeedSimulatorCH/main/Discord.gg/CreepHub", true))()
+    end)
+    GameHubSection:Button("Project Vellerius", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Corrupt2625/pjv/main/Loader.lua"))()
+    end)
+    GameHubSection:Button("Tool Hub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ChillTool_Key/main/Loader.lua"))()
+    end)
+    GameHubSection:Button("Plasma Hub", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/RubyBoo4life/Scripts/main/LOADER.vis'))()
+    end)
+    GameHubSection:Button("Nixyr Hub", function(v)
+        loadstring(game:HttpGet("https://github.com/HazeNx/shimbo/raw/main/euphoria.lua"))()
+    end)
+    GameHubSection:Button("Domain X", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
+    end)
+    GameHubSection:Button("HoHo Hub", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+    end)
+    GameHubSection:Button("Moonlight", function(v)
+        loadstring(game:HttpGet('https://cookie-hosting.xyz/Roblox/Moonlight/Loader.lua'))()
+    end)
+    GameHubSection:Button("LK Hub", function(v)
+        local old 
+        old = hookfunction(game.HttpGet, function(self, url)
+            if type(url) == "string" then
+                if string.match(url, "check.php") then
+                    return "Whitelisted"
+                end
+            end
+            return old(self, url)
+        end)
+        
+        loadstring(game:HttpGet("https://lkhub.net/s/loader.lua"))()
+    end)
+    GameHubSection:Button("Pog Hub", function(v)
+        loadstring(game:HttpGet("https://pastebin.com/raw/TKhpWRSG"))()
+    end)
+    GameHubSection:Button("Discordia Hub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/albibos/discordia/main/lua"))()
+    end)
+    GameHubSection:Button("Vestra Hub", function(v)
+        loadstring(game:HttpGet("https://script.vestrahub.com"))()
+    end)
+    GameHubSection:Button("Rox Hub", function(v)
+        pcall(function()
+            Rox_Hub = true
+            loadstring(game:HttpGet("https://gist.githubusercontent.com/HaxxV1/d7cfdb5090e819a84a8db22fb113f39d/raw"))()
+        end)
+    end)
+    GameHubSection:Button("King Hub V2", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/King-Hub-v2/main/Loader.lua'))()
+    end)
+    GameHubSection:Button("Ez Hub", function(v)
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))() 
+    end)
+    GameHubSection:Button("(Key) NukeCity", function(v)
+        _G.key = "imadevreal" 
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/TheALLHACKLoader/main/NukeLoader"))()
+        end)
+    GameHubSection:Button("EWYZU (New)", function()
+        _G.Key = "YouTubeBestxx"
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ewyzu/ewyzu-loader/main/main-ewyzuloader"))()
+    end)
