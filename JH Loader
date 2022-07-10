@@ -8,20 +8,23 @@
 
     -- Main
 
+    wait(1)
     game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Checking Version = 3.2.1x", Icon = "rbxassetid://9964802419", Duration = 4})
-    wait(0.06)
+    wait (0.5)
     game.StarterGui:SetCore("SendNotification", {Title = "Jaguar On Top!!", Text = "Loading In Progress ...", Icon = "rbxassetid://9964802419", Duration = 4})
-    wait (0.04)
+    wait (0.1)
     game.StarterGui:SetCore("SendNotification", {Title = "Enjoy ❤", Text = "Finished Loading!", Icon = "rbxassetid://9964802419", Duration = 4})
-    wait (0.02)
 
     local Tab = window:Server("Jaguar Hub", "rbxassetid://9964802419")
     local MainSection = Tab:Channel("ChangeLogs")
-    MainSection:Label("Added A Spy Script And Removed Some Scripts", function(black)
+    MainSection:Label("Adding New Scripts Tommorow😉", function(Red)
     end)
 
     local MainSection = Tab:Channel("Other Scripts")
     MainSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    end)
+    MainSection:Button("🟩V Hub", function(v)
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/itsyaboivincentt5315/script/main/VHub.txt'),true))()
     end)
     MainSection:Button("🟩BobloxScripts", function(v)
         game.StarterGui:SetCore("SendNotification", {Title = "Loading BobloxScripts", Text = "Boblox Scripts Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
@@ -30,7 +33,6 @@
     MainSection:Button("🟩Dex Explorer", function(v)
         loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
     end)
-
     MainSection:Button("🟩(Spy On People Private Chat)", function(v)
     --This script reveals ALL hidden messages in the default chat
     --chat "/spy" to toggle!
