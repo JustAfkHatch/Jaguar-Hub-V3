@@ -1,15 +1,15 @@
-    -- Jaguar Hub Version 3.2.1x Discord Lib
+    -- Jaguar Hub Version 3.2.2x Discord Lib
 
     wait (0.01)
 
     local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord"))()
-    local window = library:Window("Jaguar Hub Version 3.2.1x")
+    local window = library:Window("Jaguar Hub Version 3.2.2x")
 
 
     -- Main
 
     wait(1)
-    game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Checking Version = 3.2.1x", Icon = "rbxassetid://9964802419", Duration = 4})
+    game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Checking Version = 3.2.2x", Icon = "rbxassetid://9964802419", Duration = 4})
     wait (0.5)
     game.StarterGui:SetCore("SendNotification", {Title = "Jaguar On Top!!", Text = "Loading In Progress ...", Icon = "rbxassetid://9964802419", Duration = 4})
     wait (0.1)
@@ -21,7 +21,7 @@
     end)
 
     local MainSection = Tab:Channel("Other Scripts")
-    MainSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    MainSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Patched For Right Now", function(v)
     end)
     MainSection:Button("🟩V Hub", function(v)
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/itsyaboivincentt5315/script/main/VHub.txt'),true))()
@@ -186,7 +186,7 @@
 
 
     local MiningSim2Section = Tab:Channel("Mining Simulator 2")
-    MiningSim2Section:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    MiningSim2Section:Label("🟩 Working! 🟧 Getting A Rework 🟥 Patched For Right Now", function(v)
     end)
     MiningSim2Section:Button("🟩 Zeerox Rewrite Gui (Highly Recommended For AFK Farming)", function(v)
         game.StarterGui:SetCore("SendNotification", {Title = "Loading Zeerox Gui", Text = "Zeerox Gui Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
@@ -226,8 +226,11 @@
     end)
     MiningSim2Section:Button("🟧 HugeGames (Currently Down And Getting A Whole Rewrite)", function(v)
         game.StarterGui:SetCore("SendNotification", {Title = "Loading HugeGames", Text = "HugeGames Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
-        _G.AuthKey="HUGE_5ZRZJOyQX1UW124G"
-        loadstring(game:HttpGet("https://HugeGames.io/rewrite"))()
+        getgenv().AuthKey="HUGE_wDp2O6304GTlCH0n"
+        getgenv().LoadSettings={
+            UseSeperateSaves=false
+        }
+        loadstring(game:HttpGet("https://HugeGames.io/ms2"))()
     end)
     MiningSim2Section:Button("🟩 SoggyWare (Highly Recommended For AFK Farming)", function(v)
         game.StarterGui:SetCore("SendNotification", {Title = "Loading SoggyWare", Text = "SoggyWare Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
@@ -242,7 +245,7 @@
     -- Bedwars
 
     local BedwarsSection = Tab:Channel("Bedwars")
-    BedwarsSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    BedwarsSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Patched For Right Now", function(v)
     end)
     BedwarsSection:Button("🟩Vape V4", function(v)
         game.StarterGui:SetCore("SendNotification", {Title = "Loading VapeV4", Text = "Vape4 Loading Shortly", Icon = "rbxassetid://10007425381", Duration = 4})
@@ -265,7 +268,7 @@
 
 
     local ClickerSimSection = Tab:Channel("Clicker Simulator")
-    ClickerSimSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    ClickerSimSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Patched For Right Now", function(v)
     end)
     ClickerSimSection:Button("🟩MasterHub", function(v)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/destylol/masterhubv311/itachi/Main.lua"))()
@@ -302,7 +305,7 @@
 
 
     local UniversalSection = Tab:Channel("Universals")
-    UniversalSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    UniversalSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Patched For Right Now", function(v)
     end)
     UniversalSection:Label("All Working As Of Right Now", function(v)
     end)
@@ -539,7 +542,7 @@ end
 
 
     local PSXSection = Tab:Channel("Pet Simulator X")
-    PSXSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    PSXSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Patched For Right Now", function(v)
     end)
     PSXSection:Button("🟩MasterHub", function(v)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/destylol/masterhubv311/itachi/Main.lua"))()
@@ -566,7 +569,11 @@ end
         loadstring(game:HttpGet("https://raw.githubusercontent.com/BLACKGAMER1221/Pet-Simulator-X/main/BK%20Pet.lua"))()
     end)
     PSXSection:Button("🟩Huge Games", function(v)
-        loadstring(game:HttpGet("https://chatht.ml/script"))()
+    getgenv().AuthKey="HUGE_wDp2O6304GTlCH0n"
+    getgenv().LoadSettings={
+    UseSeperateSaves=false
+    }
+    loadstring(game:HttpGet("https://HugeGames.io/script"))()
     end)
     PSXSection:Button("🟩Void Hub", function(v)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Wind596/VoidHub/main/WiningDediy", true))()
@@ -636,7 +643,7 @@ end
 
 
     local GoalKickSimSection = Tab:Channel("Goal Kick Simulator")
-    GoalKickSimSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    GoalKickSimSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Patched For Right Now", function(v)
     end)
     GoalKickSimSection:Label("All Working As Of Right Now", function(v)
     end)
@@ -680,7 +687,7 @@ end
 -- SonicSpeedSimulator
 
     local SonicSpeedSimulatorSection = Tab:Channel("SonicSpeedSimulator")
-    SonicSpeedSimulatorSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    SonicSpeedSimulatorSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Patched For Right Now", function(v)
     end)
     SonicSpeedSimulatorSection:Label("All Working As Of Right Now", function(v)
     end)
@@ -711,7 +718,7 @@ end
 -- Murder Mystery 2
 
     local MurderMystery2Section = Tab:Channel("Murder Mystery 2")
-    MurderMystery2Section:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    MurderMystery2Section:Label("🟩 Working! 🟧 Getting A Rework 🟥 Patched For Right Now", function(v)
     end)
     MurderMystery2Section:Label("All Working As Of Right Now", function(v)
     end)
@@ -733,7 +740,7 @@ end
     -- SharkBite
 
     local SharkBiteSection = Tab:Channel("SharkBite")
-    SharkBiteSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Down Getting Unpatch Later", function(v)
+    SharkBiteSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Patched For Right Now", function(v)
     end)
     SharkBiteSection:Button("🟩Cypher Hub", function(v)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/LOOF-sys/Roblox-Shit/main/SharkBite.lua'))()
@@ -749,7 +756,7 @@ end
 
 
     local GameHubSection = Tab:Channel("GameHub")
-    GameHubSection:Label("🟩:Working! 🟧:Getting A Rework 🟨:NOT THE RIGHT KEY 🟥:Down Getting Unpatch Later", function(v)
+    GameHubSection:Label("🟩Working! 🟧Getting A Rework 🟨NOT THE RIGHT KEY 🟥Patched For Right Now", function(v)
     end)
     GameHubSection:Button("Proxima Hub", function(v)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
@@ -772,20 +779,11 @@ end
     GameHubSection:Button("CheesyHub", function(v)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/CheeseyMine/CheeseyHub/main/CheeseyHubV6"))()
     end)
-    GameHubSection:Button("CreepHub", function(v)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/VandalRevenge02/SonicSpeedSimulatorCH/main/Discord.gg/CreepHub", true))()
-    end)
     GameHubSection:Button("Project Vellerius", function(v)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Corrupt2625/pjv/main/Loader.lua"))()
     end)
-    GameHubSection:Button("Tool Hub", function(v)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ChillTool_Key/main/Loader.lua"))()
-    end)
     GameHubSection:Button("Plasma Hub", function(v)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/RubyBoo4life/Scripts/main/LOADER.vis'))()
-    end)
-    GameHubSection:Button("Nixyr Hub", function(v)
-        loadstring(game:HttpGet("https://github.com/HazeNx/shimbo/raw/main/euphoria.lua"))()
     end)
     GameHubSection:Button("Domain X", function(v)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
@@ -821,6 +819,6 @@ end
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))() 
     end)
     GameHubSection:Button("🟨 NukeCity (Key)", function(v)
-        _G.key = "imadevreal" 
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/TheALLHACKLoader/main/NukeLoader"))()
-        end)
+    _G.key = "imadevreal" 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/TheALLHACKLoader/main/NukeLoader"))()
+    end)
