@@ -1,15 +1,15 @@
-    -- Jaguar Hub Version 3.2.2x Discord Lib
+    -- Jaguar Hub Version 3.2.3p Discord Lib
 
     wait (0.01)
 
     local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord"))()
-    local window = library:Window("Jaguar Hub Version 3.2.2x")
+    local window = library:Window("Jaguar Hub Version 3.2.3p")
 
 
     -- Main
 
     wait(1)
-    game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Checking Version = 3.2.2x", Icon = "rbxassetid://9964802419", Duration = 4})
+    game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Checking Version = 3.2.3p", Icon = "rbxassetid://9964802419", Duration = 4})
     wait (0.5)
     game.StarterGui:SetCore("SendNotification", {Title = "Jaguar On Top!!", Text = "Loading In Progress ...", Icon = "rbxassetid://9964802419", Duration = 4})
     wait (0.1)
@@ -17,9 +17,7 @@
 
     local Tab = window:Server("Jaguar Hub", "rbxassetid://9964802419")
     local ChangeLogsSection = Tab:Channel("ChangeLogs")
-    ChangeLogsSection:Label("Added Old Scripts To Mining Simulator 2 (At The Bottom)", function(Red)
-    end)
-    ChangeLogsSection:Label("Removed Some Old Scripts, Fixed Some OutDated Scripts Too", function(Red)
+    ChangeLogsSection:Label("Added A Jailbreak Section And Scripts inside of it", function(Red)
     end)
 
     local MainSection = Tab:Channel("Other Scripts")
@@ -548,6 +546,44 @@ end
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/rajrsansraowar/Lightux/main/README.md'),true))()
     end)
 
+-- JailBreak
+
+    local JailBreak = Tab:Channel("JailBreak")
+    JailBreak:Label("🟩 Working! 🟧 Getting A Rework 🟥 Patched For Right Now", function(v)
+    end)
+    JailBreak:Button("🟩Vynixus", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Jailbreak/Script.lua"))()
+    end)
+    JailBreak:Button("🟩Auto Farm", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1"))();
+    end)
+    JailBreak:Button("🟩Diamond Hub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxiYT/Diamond/main/JailBreak"))()
+    end)
+    JailBreak:Button("🟩Dark Hub", function(v)
+        loadstring(game:HttpGet("https://darkhub.xyz/remote-script.lua", true))()
+    end)
+    JailBreak:Button("🟩Evo2", function(v)
+        loadstring(game:HttpGet("https://projectevo.xyz/script/loader.lua"))()
+    end)
+    JailBreak:Button("🟩Weiny", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/weiny-ez/w-main/main/jailbreak.lua'))()
+    end)
+    JailBreak:Button("🟩Chaos Hub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xChaoticVoid/Chaos-Hub-v1/main/ChaosHub.lua"))()
+    end)
+    JailBreak:Button("🟩Vg Hub", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+    end)
+    JailBreak:Button("🟩Blox Hub (KEY)", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxiYT/BloxHubFixed/main/MainCode2"))()
+    end)
+    JailBreak:Button("🟩Cheesy Hub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CheeseyMine/CheeseyHub/main/CheeseyHubV6"))()
+    end)
+    JailBreak:Button("🟩Monkey", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/JailMonkey.lua"))()
+    end)
 
 -- Pet Simulator X
 
