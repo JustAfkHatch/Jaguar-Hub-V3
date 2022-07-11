@@ -8,12 +8,12 @@
 
     -- Main
 
-    wait(1)
+    wait(0.8)
     game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Checking Version = 3.2.3p", Icon = "rbxassetid://9964802419", Duration = 4})
     wait (0.5)
-    game.StarterGui:SetCore("SendNotification", {Title = "Jaguar On Top!!", Text = "Loading In Progress ...", Icon = "rbxassetid://9964802419", Duration = 4})
+    game.StarterGui:SetCore("SendNotification", {Title = "Jaguar On Top!", Text = "Loading In Progress ...", Icon = "rbxassetid://9964802419", Duration = 4})
     wait (0.1)
-    game.StarterGui:SetCore("SendNotification", {Title = "Enjoy ❤", Text = "Finished Loading!", Icon = "rbxassetid://9964802419", Duration = 4})
+    game.StarterGui:SetCore("SendNotification", {Title = "❤ Enjoy ❤", Text = "Finished Loading!", Icon = "rbxassetid://9964802419", Duration = 4})
 
     local Tab = window:Server("Jaguar Hub", "rbxassetid://9964802419")
     local ChangeLogsSection = Tab:Channel("ChangeLogs")
