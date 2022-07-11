@@ -202,7 +202,7 @@
     end)
     MiningSim2Section:Button("🟩 Kelp (Highly Recommended For AFK Farming)", function(v)
         game.StarterGui:SetCore("SendNotification", {Title = "Loading Kelp", Text = "Kelp Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/TSQ-new/KelpHub/main/Mining%20Simulator%202"))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/MaGiXxScripter/Cum-Hub/main/loader'))()
     end)
     MiningSim2Section:Button("🟩 Vestra Hub (Highly Recommended For AFK Farming)", function(v)
         game.StarterGui:SetCore("SendNotification", {Title = "Loading Vestra Hub", Text = "Vestra Hub Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
