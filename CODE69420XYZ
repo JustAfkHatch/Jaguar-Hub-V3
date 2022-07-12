@@ -8,12 +8,12 @@
 
     -- Main
 
-    wait(0.8)
+    wait(1)
     game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Checking Version = 3.2.3p", Icon = "rbxassetid://9964802419", Duration = 4})
     wait (0.5)
-    game.StarterGui:SetCore("SendNotification", {Title = "Jaguar On Top!", Text = "Loading In Progress ...", Icon = "rbxassetid://9964802419", Duration = 4})
+    game.StarterGui:SetCore("SendNotification", {Title = "Jaguar On Top!!", Text = "Loading In Progress ...", Icon = "rbxassetid://9964802419", Duration = 4})
     wait (0.1)
-    game.StarterGui:SetCore("SendNotification", {Title = "❤ Enjoy ❤", Text = "Finished Loading!", Icon = "rbxassetid://9964802419", Duration = 4})
+    game.StarterGui:SetCore("SendNotification", {Title = "Enjoy ❤", Text = "Finished Loading!", Icon = "rbxassetid://9964802419", Duration = 4})
 
     local Tab = window:Server("Jaguar Hub", "rbxassetid://9964802419")
     local ChangeLogsSection = Tab:Channel("ChangeLogs")
@@ -220,9 +220,9 @@
         game.StarterGui:SetCore("SendNotification", {Title = "Loading Saza Hub V2", Text = "Saza Hub V2 Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-DonateMe-3327"))()SZInjected(SZLoader)()
     end)
-    MiningSim2Section:Button("🟩 Extreme Hub (Key)", function(v)
-        game.StarterGui:SetCore("SendNotification", {Title = "Loading Extreme Hub", Text = "Extreme Hub Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ExtremeAntonis/KeySystemUI/main/KeySystemUI-Obfuscated.lua"))()
+    MiningSim2Section:Button("🟩 SoggyWare (Highly Recommended For AFK Farming)", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading SoggyWare", Text = "SoggyWare Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet("https://soggyhubv2.vercel.app"))()
     end)
     MiningSim2Section:Button("🟧 HugeGames", function(v)
         game.StarterGui:SetCore("SendNotification", {Title = "Loading HugeGames", Text = "HugeGames Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
@@ -232,9 +232,9 @@
         }
         loadstring(game:HttpGet("https://HugeGames.io/ms2"))()
     end)
-    MiningSim2Section:Button("🟩 SoggyWare (Highly Recommended For AFK Farming)", function(v)
-        game.StarterGui:SetCore("SendNotification", {Title = "Loading SoggyWare", Text = "SoggyWare Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
-        loadstring(game:HttpGet("https://soggyhubv2.vercel.app"))()
+    MiningSim2Section:Button("🟩 Extreme Hub (Key)", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading Extreme Hub", Text = "Extreme Hub Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ExtremeAntonis/KeySystemUI/main/KeySystemUI-Obfuscated.lua"))()
     end)
     MiningSim2Section:Button("🟩 Project Meow (Buggy Features Still)", function(v)
         game.StarterGui:SetCore("SendNotification", {Title = "Loading Project Meow", Text = "Project Meow Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
