@@ -19,7 +19,7 @@
     local ChangeLogsSection = Tab:Channel("ChangeLogs")
     ChangeLogsSection:Label("What Is New?", function(Red)
     end)
-    ChangeLogsSection:Label("Added A Couple Of Scripts And Moved Things Around", function(Red)
+    ChangeLogsSection:Label("Added A Couple Of Scripts And Moved Things Around A Bit!", function(Red)
     end)
 
     local ScriptBlox = Tab:Channel("ScriptBlox Scripts")
