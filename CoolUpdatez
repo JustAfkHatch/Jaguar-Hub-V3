@@ -27,6 +27,12 @@
     end)
     ScriptBlox:Label("More Coming Soon!", function(v)
     end)
+    ScriptBlox:Button("🟩Dark Dex V3", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+    end)
+    ScriptBlox:Button("🟩Auto Clicker", function(v)
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/ROBLOX_AutoClicker"))()
+    end)
     ScriptBlox:Button("🟩Chat Translator", function(v)
     loadstring(game:HttpGetAsync('https://i.qts.life/r/ChatInlineTranslator.lua', true))()
 --[[
