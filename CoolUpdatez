@@ -1,15 +1,15 @@
-    -- Jaguar Hub Version 3.2.4x Discord Lib
+    -- Jaguar Hub Version 3.2.5g Discord Lib
 
     wait (0.01)
 
     local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord"))()
-    local window = library:Window("Jaguar Hub Version 3.2.4x")
+    local window = library:Window("Jaguar Hub Version 3.2.5g")
 
 
     -- Main
 
     wait(1)
-    game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Checking Version = 3.2.4x", Icon = "rbxassetid://9964802419", Duration = 4})
+    game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Checking Version = 3.2.5g", Icon = "rbxassetid://9964802419", Duration = 4})
     wait (0.5)
     game.StarterGui:SetCore("SendNotification", {Title = "Jaguar On Top!!", Text = "Loading In Progress ...", Icon = "rbxassetid://9964802419", Duration = 4})
     wait (0.1)
@@ -17,10 +17,9 @@
 
     local Tab = window:Server("Jaguar Hub", "rbxassetid://9964802419")
     local ChangeLogsSection = Tab:Channel("ChangeLogs")
-    ChangeLogsSection:Label("What Is New?", function(Red)
+    ChangeLogsSection:Label("Added Mining Clicker Simulator Scripts", function(Red)
     end)
-    ChangeLogsSection:Label("Added A Couple Of Scripts And Moved Things Around", function(Red)
-    end)
+
 
     local ScriptBlox = Tab:Channel("ScriptBlox Scripts")
     ScriptBlox:Label("🟩 Working! 🟧 Getting A Rework 🟥 Patched!", function(v)
@@ -150,7 +149,6 @@ end
 
 
 
-
 local TPUi = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UIGradient = Instance.new("UIGradient")
@@ -236,7 +234,6 @@ TPBtn.MouseButton1Click:Connect(function()
 	end
 end)
 end)
-
 
     local MainSection = Tab:Channel("Other Scripts")
     MainSection:Label("🟩 Working! 🟧 In Development 🟥 Patched!", function(v)
@@ -474,8 +471,53 @@ end)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/halloweevn/RobloxScripts/main/Mining%20Simulator%202/src'))()
     end)
 
+    local MCSSection = Tab:Channel("Mining Clicker Simulator")
+    MCSSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Patched!", function(v)
+    end)
+    MCSSection:Button("🟩SoggyWare", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading SoggyWare", Text = "SoggyWare Loading Shortly", Icon = "rbxassetid://10007425381", Duration = 4})
+        loadstring(game:HttpGet("https://soggyhubv2.vercel.app"))()
+    end)
+    MCSSection:Button("🟩Void Hub", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading Void Hub", Text = "Void Hub Loading Shortly", Icon = "rbxassetid://10007425381", Duration = 4})
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/VoidSkids/MiningClickingSim/main/README.md",true))();
+    end)
+    MCSSection:Button("🟩 Project Meow", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading Project Meow", Text = "Project Meow Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet"https://rawscripts.net/raw/Project-Meow_421")()
+    end)
+    MCSSection:Button("🟩Facts Hub", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading Facts Hub", Text = "Facts Hub Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ItsFacts/FactsHub/main/Loader",true))();
+    end)
+    MCSSection:Button("🟩Ultra Hub", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading Ultra Hub", Text = "Ultra Hub Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaRdoOx/Ultra-Hub/main/Main"))()
+    end)
+    MCSSection:Button("🟩Mining Clicker Sim", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading Mining Clicker Sim", Text = "Mining Clicker Sim Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/OverK2LL/Mining-CLicer-sim/main/Open%20Source"))()
+    end)
+    MCSSection:Button("🟩Frozen Hub (KEY)", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading Frozen Hub", Text = "Frozen Hub Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsLynX/FrozenHub/main/KeySystem"))()
+    end)
+    MCSSection:Button("🟩Beluse Hub", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading Beluse Hub", Text = "Beluse Hub Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/beliveri12/BeluseHub/main/Loader.lua', true))()
+    end)
+    MCSSection:Button("🟩KeyBrew Hub (Key)", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading Keybrew Hub", Text = "Keybrew Hub Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/borntodiekuv/KeybrewHub/main/Main"))()
+    end)
+    MCSSection:Button("🟩SRM Hub (KEY)", function(v)
+        game.StarterGui:SetCore("SendNotification", {Title = "Loading Keybrew Hub", Text = "Keybrew Hub Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/bebedi15/SRM-Scripts/main/Bebedi9960/SRMHub"))()
+    end)
+
 
     -- Bedwars
+
 
     local BedwarsSection = Tab:Channel("Bedwars")
     BedwarsSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Patched!", function(v)
@@ -498,6 +540,7 @@ end)
         shared.nobolineupdate = true
         loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
     end)
+
 
     --Clicker Simulator
 
@@ -535,6 +578,7 @@ end)
     ClickerSimSection:Button("🟩Extreme Hub", function(v)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ExtremeAntonis/KeySystemUI/main/KeySystemUI-Obfuscated.lua"))()
     end)
+
 
     -- Universals
 
@@ -767,7 +811,9 @@ end
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/rajrsansraowar/Lightux/main/README.md'),true))()
     end)
 
+
 -- JailBreak
+
 
     local JailBreak = Tab:Channel("JailBreak")
     JailBreak:Label("🟩 Working! 🟧 In Development 🟥 Patched!", function(v)
@@ -805,6 +851,7 @@ end
     JailBreak:Button("🟩Monkey", function(v)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/JailMonkey.lua"))()
     end)
+
 
 -- Pet Simulator X
 
@@ -907,6 +954,7 @@ end
         loadstring(game:HttpGet("https://script.vestrahub.com"))()
     end)
 
+
 -- Goal Kick Simulator
 
 
@@ -952,9 +1000,11 @@ end
         loadstring(game:HttpGet"https://rawscripts.net/raw/Project-Meow_421")()
     end)
 
+
 -- SonicSpeedSimulator
 
-    local SonicSpeedSimulatorSection = Tab:Channel("SonicSpeedSimulator")
+
+    local SonicSpeedSimulatorSection = Tab:Channel("Sonic Speed Simulator")
     SonicSpeedSimulatorSection:Label("🟩 Working! 🟧 In Development 🟥 Patched!", function(v)
     end)
     SonicSpeedSimulatorSection:Label("All Working As Of Right Now", function(v)
@@ -983,12 +1033,12 @@ end
         loadstring(game:HttpGet('https://raw.githubusercontent.com/zReal-King/King-Hub-v2/main/Loader.lua'))()
     end)
 
+
 -- Murder Mystery 2
+
 
     local MurderMystery2Section = Tab:Channel("Murder Mystery 2")
     MurderMystery2Section:Label("🟩 Working! 🟧 In Development 🟥 Patched!", function(v)
-    end)
-    MurderMystery2Section:Label("All Working As Of Right Now", function(v)
     end)
     MurderMystery2Section:Button("🟩Eclipse", function(v)
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script'),true))()
@@ -1005,23 +1055,7 @@ end
         loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
     end)
 
-    -- SharkBite
-
-    local SharkBiteSection = Tab:Channel("SharkBite")
-    SharkBiteSection:Label("🟩 Working! 🟧 In Development 🟥 Patched!", function(v)
-    end)
-    SharkBiteSection:Button("🟩Cypher Hub", function(v)
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/LOOF-sys/Roblox-Shit/main/SharkBite.lua'))()
-    end)
-    SharkBiteSection:Button("🟩Sharkbite GUI", function(v)
-        loadstring(game:HttpGet("https://pastebin.com/raw/YYVLbzVg", true))()
-    end)
-    SharkBiteSection:Button("🟩Trolling Gui", function(v)
-        loadstring(game:HttpGet('https://pastebin.com/raw/AvGHiQkr'))()
-    end)
-
     -- GameHub SECTION
-
 
     local GameHubSection = Tab:Channel("GameHub")
     GameHubSection:Label("🟩Working! 🟧In Development/Wrong Key 🟥Patched!", function(v)
