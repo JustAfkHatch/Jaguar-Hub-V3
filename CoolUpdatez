@@ -1,18 +1,18 @@
-    -- Jaguar Hub Version 3.2.6vpn Discord Lib
+    -- Jaguar Hub Version 3.2.5g Discord Lib
 
     wait (0.01)
 
     local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord"))()
-    local window = library:Window("Jaguar Hub Version 3.2.6vpn")
+    local window = library:Window("Jaguar Hub Version 3.2.5g")
 
 
     -- Main
 
-    wait(0.7)
-    game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Checking Version = 3.2.6vpn", Icon = "rbxassetid://9964802419", Duration = 4})
+    wait(1)
+    game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Checking Version = 3.2.5g", Icon = "rbxassetid://9964802419", Duration = 4})
     wait (0.5)
     game.StarterGui:SetCore("SendNotification", {Title = "Jaguar On Top!!", Text = "Loading In Progress ...", Icon = "rbxassetid://9964802419", Duration = 4})
-    wait (0.3)
+    wait (0.1)
     game.StarterGui:SetCore("SendNotification", {Title = "Enjoy ❤", Text = "Finished Loading!", Icon = "rbxassetid://9964802419", Duration = 4})
 
     local Tab = window:Server("Jaguar Hub", "rbxassetid://9964802419")
@@ -413,7 +413,7 @@ end)
     end)
     MiningSim2Section:Button("🟩 Vestra Hub", function(v)
         game.StarterGui:SetCore("SendNotification", {Title = "Loading Vestra Hub", Text = "Vestra Hub Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
-        loadstring(game:HttpGet("https://script.vestrahub.com"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xandudiscord/vestra/main/loader.lua"))()
     end)
     MiningSim2Section:Button("🟩 Zeerox Gui (Old And Buggy)", function(v)
         game.StarterGui:SetCore("SendNotification", {Title = "Loading Zeerox Gui", Text = "Old Zeerox Gui Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
@@ -602,7 +602,7 @@ end)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
     end)
     UniversalSection:Button("🟩Vestra Hub", function(v)
-        loadstring(game:HttpGet("https://script.vestrahub.com"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xandudiscord/vestra/main/loader.lua"))()
     end)
     UniversalSection:Button("🟩OwlHub", function(v)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
@@ -616,137 +616,6 @@ end)
     UniversalSection:Button("🟩OP GUI (basically kills whoever you look at)", function(v)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Spoorloos/scripts/main/pf-silentaim.lua"))();
     end)
-    UniversalSection:Button("🟩Phatom Force Unlock All", function(v)
-        -- made by siper#9938
-
--- modules
-local network, char, loadgun, loadknife; do
-    for _, object in next, getgc(true) do
-        if (typeof(object) == "table") then
-            if (rawget(object, "send")) then
-                network = object;
-            elseif (rawget(object, "setbasewalkspeed")) then
-                char = object;
-            end
-        elseif (typeof(object) == "function") then
-            local name = debug.getinfo(object).name;
-
-            if (name == "loadgun") then
-                loadgun = object;
-            elseif (name == "loadknife") then
-                loadknife = object;
-            end
-        end
-    end
-end
-
--- services
-local replicatedStorage = game:GetService("ReplicatedStorage");
-
--- cache
-local content = replicatedStorage:WaitForChild("Content");
-local productionContent = content:WaitForChild("ProductionContent");
-local attachmentModules = productionContent:WaitForChild("AttachmentModules");
-local gunModules = productionContent:WaitForChild("GunModules");
-
--- stored data
-local gunIgnore = {"JUGGUN", "HK417Old", "PAINTBALL GUN", "RAILGUN OLD", "PPK12", "SVK12E", "MG42"};
-local weaponData = {};
-local attachmentData = {};
-local primaryClasses = { "ASSAULT", "BATTLE", "CARBINE", "SHOTGUN", "PDW", "DMR", "LMG", "SNIPER" };
-local generalClassData = {
-    ["ASSAULT"] = "AK12",
-    ["BATTLE"] = "AK12",
-    ["CARBINE"] = "M4A1",
-    ["SHOTGUN"] = "KSG 12",
-    ["PDW"] = "MP5K",
-    ["DMR"] = "INTERVENTION",
-    ["LMG"] = "COLT LMG",
-    ["SNIPER"] = "INTERVENTION",
-    ["PISTOL"] = "M9",
-    ["MACHINE PISTOL"] = "M9",
-    ["REVOLVER"] = "M9",
-    ["OTHER"] = "M9",
-    ["FRAGMENTATION"] = "M67 FRAG",
-    ["HIGH EXPLOSIVE"] = "M67 FRAG",
-    ["IMPACT"] = "M67 FRAG",
-    ["ONE HAND BLADE"] = "KNIFE",
-    ["TWO HAND BLADE"] = "KNIFE",
-    ["ONE HAND BLUNT"] = "MAGLITE CLUB",
-    ["TWO HAND BLUNT"] = "HOCKEY STICK",
-};
-local weapons = {};
-
--- hooks
-do
-    local oldNetworkSend = network.send; network.send = function(self, name, ...)
-        local args = {...};
-
-        if (name == "changewep") then
-            weaponData[args[1]] = args[2];
-            args[2] = generalClassData[weapons[args[2]].type];
-        end
-
-        if (name == "changeatt") then
-            attachmentData[args[2]] = args[3];
-            return
-        end
-
-        return oldNetworkSend(self, name, unpack(args));
-    end
-
-    local oldLoadgrenade = char.loadgrenade; char.loadgrenade = function(self, name, ...)
-        name = weaponData["Grenade"] or name;
-        return oldLoadgrenade(self, name, ...);
-    end;
-
-    local oldLoadknife; oldLoadknife = hookfunction(loadknife, function(name, ...)
-        name = weaponData["Knife"] or name;
-        return oldLoadknife(name, ...);
-    end);
-
-    local oldLoadgun; oldLoadgun = hookfunction(loadgun, function(name, magsize, sparerounds, attachments, ...)
-        local gunData = weapons[name];
-        local newName = table.find(primaryClasses, gunData.type) and weaponData["Primary"] or weaponData["Secondary"];
-
-        name = (newName and newName or name);
-
-        local attachs = attachmentData[name];
-
-        if (attachs) then
-            attachments = attachs;
-        end
-
-        return oldLoadgun(name, magsize, sparerounds, attachments, ...);
-    end);
-end
-
--- init
-do
-    for _, module in next, gunModules:GetChildren() do
-        if (not table.find(gunIgnore, module.Name)) then
-            local data = require(module);
-            weapons[module.Name] = data;
-        end
-    end
-
-    for _, module in next, attachmentModules:GetChildren() do
-        local data = require(module);
-        data.unlockkills = 0;
-    end
-
-    for _, module in next, gunModules:GetChildren() do
-        if (not table.find(gunIgnore, module.Name)) then
-            local data = require(module);
-            data.unlockrank = 0;
-            data.adminonly = false;
-            data.supertest = false;
-            data.exclusiveunlock = false;
-            data.hideunlessowned = false;
-        end
-    end
-end
-    end)
     UniversalSection:Button("🟩Zyrex Hub", function(v)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/NotZyrex/Zyrex-Hub/main/Main.lua', true))();
     end)
@@ -754,7 +623,8 @@ end
         loadstring(game:HttpGet('https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/BoltsHubV5'))()
     end)
     UniversalSection:Button("🟩Zephyr X", function(v)
-        pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/ECLIPSEXHUB/ECLIPSE-X/main/ECLIPSE%20X.txt', true))() end)
+            pcall(function() loadstring(game:HttpGet('https://raw.githubusercontent.com/ECLIPSEXHUB/ECLIPSE-X/main/ECLIPSE%20X.txt', true))() 
+        end)
     end)
     UniversalSection:Button("🟩Universal Script", function(v)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/tehtestedd/ROBLOX/main/Amnesty.lua"))()
@@ -924,7 +794,7 @@ end
         loadstring(game:HttpGet('https://raw.githubusercontent.com/RubyBoo4life/Scripts/main/LOADER.vis'))()
     end)
     PSXSection:Button("🟩Vestra Hub", function(v)
-        loadstring(game:HttpGet("https://script.vestrahub.com"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xandudiscord/vestra/main/loader.lua"))()
     end)
 
 
@@ -1079,7 +949,7 @@ end
         loadstring(game:HttpGet("https://raw.githubusercontent.com/albibos/discordia/main/lua"))()
     end)
     GameHubSection:Button("🟩Vestra Hub (Key In Discord)", function(v)
-        loadstring(game:HttpGet("https://script.vestrahub.com"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xandudiscord/vestra/main/loader.lua"))()
     end)
     GameHubSection:Button("🟩Rox Hub", function(v)
         pcall(function()
