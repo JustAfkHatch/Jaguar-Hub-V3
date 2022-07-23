@@ -3,7 +3,7 @@
     wait (0.01)
 
     local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord"))()
-    local window = library:Window("Jaguar Hub Version 3.2.7dj)
+    local window = library:Window("Jaguar Hub Version 3.2.7dj")
 
 
     -- Main
@@ -402,8 +402,8 @@ end)
     local MiningSim2Section = Tab:Channel("Mining Simulator 2")
     MiningSim2Section:Label("🟩 Working! 🟧 In Development 🟥 Patched!", function(v)
     end)
-    MiningSim2Section:Bind("Minimized Bind", Enum.KeyCode.RightShift, function(v)
-	print("Minimized")
+    MiningSim2Section:Bind("Minimized Bind", Enum.KeyCode.E, function()
+	print("MINIMIZED!")
 	end)
     MiningSim2Section:Button("🟩 Zeerox (Rewrotten)", function(v)
         game.StarterGui:SetCore("SendNotification", {Title = "Loading Zeerox Gui", Text = "Zeerox Gui Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
