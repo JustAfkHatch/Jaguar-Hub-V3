@@ -3,13 +3,13 @@
     wait (0.01)
 
     local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord"))()
-    local window = library:Window("Jaguar Hub Version 3.2.8xl")
+    local window = library:Window("Jaguar Hub Version 3.2.9Xp")
 
 
     -- Main
 
     wait(1)
-    game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Checking Version = 3.2.8xl", Icon = "rbxassetid://9964802419", Duration = 4})
+    game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Checking Version = 3.2.9Xp", Icon = "rbxassetid://9964802419", Duration = 4})
     wait (0.5)
     game.StarterGui:SetCore("SendNotification", {Title = "Please Wait Daddy", Text = "Loading In Progress ...", Icon = "rbxassetid://9964802419", Duration = 4})
     wait (0.1)
@@ -17,7 +17,7 @@
 
     local Tab = window:Server("Jaguar Hub", "rbxassetid://9964802419")
     local ChangeLogsSection = Tab:Channel("ChangeLogs")
-    ChangeLogsSection:Label("Removed Patched Scripts & Renewed Loadstrings & Soome New Scripts!", function(Red)
+    ChangeLogsSection:Label("Added New Spotify Hub Trash UI STILL BUT WILL GET A REVAMPED SOON", function(Red)
     end)
 
     local ScriptBlox = Tab:Channel("ScriptBlox Scripts")
@@ -543,7 +543,7 @@ end)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/NexIsHot/PeepWare/main/Login.lua"))()
     end)
     ClickerSimSection:Button("🟩Vestra Hub", function(v)
-        loadstring(game:HttpGet("https://script.vestrahub.com"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xandudiscord/vestra/main/loader.lua"))()
     end)
     ClickerSimSection:Button("🟩Kaoru Hub", function(v)
         loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Uvxtq/lua/main/Loader.lua"))()
