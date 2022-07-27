@@ -1,15 +1,15 @@
-    -- Jaguar Hub Version 3.2.8xl Discord Lib
+    -- Jaguar Hub Version 3.3BQ Discord Lib
 
-    wait (0.01)
+    wait(1)
 
     local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord"))()
-    local window = library:Window("Jaguar Hub Version 3.2.9Xp")
+    local window = library:Window("Jaguar Hub Version 3.3BQ")
 
 
     -- Main
 
     wait(1)
-    game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Checking Version = 3.2.9Xp", Icon = "rbxassetid://9964802419", Duration = 4})
+    game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Checking Version = 3.3BQ", Icon = "rbxassetid://9964802419", Duration = 4})
     wait (0.5)
     game.StarterGui:SetCore("SendNotification", {Title = "Please Wait Daddy", Text = "Loading In Progress ...", Icon = "rbxassetid://9964802419", Duration = 4})
     wait (0.1)
@@ -17,7 +17,7 @@
 
     local Tab = window:Server("Jaguar Hub", "rbxassetid://9964802419")
     local ChangeLogsSection = Tab:Channel("ChangeLogs")
-    ChangeLogsSection:Label("Added New Spotify Hub Trash UI STILL BUT WILL GET A REVAMPED SOON", function(Red)
+    ChangeLogsSection:Label("Removed Trash Scripts Also Enjoy Niggers", function(Red)
     end)
 
     local ScriptBlox = Tab:Channel("ScriptBlox Scripts")
@@ -25,12 +25,9 @@
     end)
     ScriptBlox:Label("More Coming Soon!", function(v)
     end)
-    ScriptBlox:Button("🟩Dark Dex V3", function(v)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+    ScriptBlox:Button("🟩Chat Bypasser", function(v)
+	loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
     end)
-        ScriptBlox:Button("🟩Chat Byoasser", function(v)
-		loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
-	end)
     ScriptBlox:Button("🟩Auto Clicker", function(v)
         loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/ROBLOX_AutoClicker"))()
     end)
@@ -142,99 +139,6 @@ af = "Afrikaans",
     yo = "Yoruba",
     zu = "Zulu"
 --]]
-end)
-ScriptBlox:Button("🟩Tp (Player)", function(v)
-if game.CoreGui:FindFirstChild("TPUi") then
-	game.CoreGui["TPUi"]:Destroy()
-end
-
-
-
-
-local TPUi = Instance.new("ScreenGui")
-local Main = Instance.new("Frame")
-local UIGradient = Instance.new("UIGradient")
-local UICorner = Instance.new("UICorner")
-local Label = Instance.new("TextLabel")
-local Username = Instance.new("TextBox")
-local TPBtn = Instance.new("TextButton")
-
-
-
-TPUi.Name = "TPUi"
-TPUi.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
-Main.Name = "Main"
-Main.Parent = TPUi
-Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Main.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.321721375, 0, 0.310954064, 0)
-Main.Size = UDim2.new(0, 233, 0, 214)
-Main.Active = true
-Main.Draggable = true
-
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(116, 137, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(237, 102, 109))}
-UIGradient.Parent = Main
-
-UICorner.CornerRadius = UDim.new(0, 4)
-UICorner.Parent = Main
-
-Label.Name = "Label"
-Label.Parent = Main
-Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Label.BackgroundTransparency = 1.000
-Label.Size = UDim2.new(0, 233, 0, 41)
-Label.Font = Enum.Font.GothamMedium
-Label.Text = "TP to Player"
-Label.TextColor3 = Color3.fromRGB(0, 0, 0)
-Label.TextScaled = true
-Label.TextSize = 14.000
-Label.TextWrapped = true
-
-Username.Name = "Username"
-Username.Parent = Main
-Username.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Username.BackgroundTransparency = 0.750
-Username.BorderSizePixel = 0
-Username.Position = UDim2.new(0.0987124443, 0, 0.233644858, 0)
-Username.Size = UDim2.new(0, 196, 0, 50)
-Username.Font = Enum.Font.GothamMedium
-Username.Text = "Put Username Here!"
-Username.TextColor3 = Color3.fromRGB(0, 0, 0)
-Username.TextScaled = true
-Username.TextSize = 14.000
-Username.TextWrapped = true
-Username.ClearTextOnFocus = false
-
-TPBtn.Name = "TPBtn"
-TPBtn.Parent = Main
-TPBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TPBtn.BackgroundTransparency = 0.750
-TPBtn.BorderSizePixel = 0
-TPBtn.Position = UDim2.new(0.0987124443, 0, 0.532710314, 0)
-TPBtn.Size = UDim2.new(0, 196, 0, 50)
-TPBtn.Font = Enum.Font.GothamMedium
-TPBtn.Text = "Teleport!"
-TPBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
-TPBtn.TextScaled = true
-TPBtn.TextSize = 14.000
-TPBtn.TextWrapped = true
-
-TPBtn.MouseButton1Click:Connect(function()
-	local username = string.lower(Username.Text)
-	local foundChild = false
-	local child
-	for i,v in pairs(game.Players:GetChildren()) do
-		if string.lower(v.Name) == username then
-			foundChild = true
-			child = v
-		end
-	end
-	if foundChild == true then
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = child.Character.HumanoidRootPart.CFrame
-	end
-end)
 end)
 
     local MainSection = Tab:Channel("Other Scripts")
@@ -405,9 +309,6 @@ end)
     local MiningSim2Section = Tab:Channel("Mining Simulator 2")
     MiningSim2Section:Label("🟩 Working! 🟧 In Development 🟥 Patched!", function(v)
     end)
-    MiningSim2Section:Button("🟩 Spotify Hub", function(v)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Fixyz1/THE-MAIN-SCRIPT-OUT-NOW/main/Spotify%20Hub%20X",true))()
-    end)
     MiningSim2Section:Button("🟩 Zeerox (Rewrotten)", function(v)
         loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/miningsim2/main/rewrite.lua')()
     end)
@@ -423,7 +324,7 @@ end)
     MiningSim2Section:Button("🟩 Kelp Hub (Key)", function(v)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/MaGiXxScripter/Cum-Hub/main/loader'))()
     end)
-    MiningSim2Section:Button("🟧🟩 HugeGames", function(v)
+    MiningSim2Section:Button("🟩🟧 HugeGames", function(v)
         getgenv().AuthKey="HUGE_wDp2O6304GTlCH0n"
         getgenv().LoadSettings={
         UseSeperateSaves=false
@@ -436,14 +337,17 @@ end)
     MiningSim2Section:Button("🟩 SoggyWare", function(v)
         loadstring(game:HttpGet("https://soggyhubv2.vercel.app"))()
     end)
-    MiningSim2Section:Button("🟩 PhantomHub (Kinda Buggy)", function(v)
-       loadstring(game:HttpGet("https://raw.githubusercontent.com/destylol/masterhubv311/itachi/Main.lua"))()
-    end)
     MiningSim2Section:Button("🟩 Extreme Hub (Key)", function(v)
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/ExtremeAntonis/KeySystemUI/main/KeySystemUI-Obfuscated.lua"))()
     end)
+    MiningSim2Section:Button("🟩 PhantomHub (Kinda Buggy)", function(v)
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/destylol/masterhubv311/itachi/Main.lua"))()
+    end)
     MiningSim2Section:Button("🟩 Project Meow (Buggy Features)", function(v)
         loadstring(game:HttpGet"https://rawscripts.net/raw/Project-Meow_421")()
+    end)
+    MiningSim2Section:Button("🟩 Spotify Hub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Fixyz1/THE-MAIN-SCRIPT-OUT-NOW/main/Spotify%20Hub%20X",true))()
     end)
     MiningSim2Section:Button("🟩 Mining Sim 2 Gui", function(v)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/XRoLLu/UWU/main/MS2_WHAT.lua"))()
@@ -453,43 +357,33 @@ end)
     MCSSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Patched!", function(v)
     end)
     MCSSection:Button("🟩SoggyWare", function(v)
-        game.StarterGui:SetCore("SendNotification", {Title = "Loading SoggyWare", Text = "SoggyWare Loading Shortly", Icon = "rbxassetid://10007425381", Duration = 4})
         loadstring(game:HttpGet("https://soggyhubv2.vercel.app"))()
     end)
     MCSSection:Button("🟩Void Hub", function(v)
-        game.StarterGui:SetCore("SendNotification", {Title = "Loading Void Hub", Text = "Void Hub Loading Shortly", Icon = "rbxassetid://10007425381", Duration = 4})
         loadstring(game:HttpGet("https://raw.githubusercontent.com/VoidSkids/MiningClickingSim/main/README.md",true))();
     end)
     MCSSection:Button("🟩 Project Meow", function(v)
-        game.StarterGui:SetCore("SendNotification", {Title = "Loading Project Meow", Text = "Project Meow Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
         loadstring(game:HttpGet"https://rawscripts.net/raw/Project-Meow_421")()
     end)
     MCSSection:Button("🟩Facts Hub", function(v)
-        game.StarterGui:SetCore("SendNotification", {Title = "Loading Facts Hub", Text = "Facts Hub Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ItsFacts/FactsHub/main/Loader",true))();
     end)
     MCSSection:Button("🟩Ultra Hub", function(v)
-        game.StarterGui:SetCore("SendNotification", {Title = "Loading Ultra Hub", Text = "Ultra Hub Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaRdoOx/Ultra-Hub/main/Main"))()
     end)
     MCSSection:Button("🟩Mining Clicker Sim", function(v)
-        game.StarterGui:SetCore("SendNotification", {Title = "Loading Mining Clicker Sim", Text = "Mining Clicker Sim Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
         loadstring(game:HttpGet("https://raw.githubusercontent.com/OverK2LL/Mining-CLicer-sim/main/Open%20Source"))()
     end)
     MCSSection:Button("🟩Frozen Hub (KEY)", function(v)
-        game.StarterGui:SetCore("SendNotification", {Title = "Loading Frozen Hub", Text = "Frozen Hub Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsLynX/FrozenHub/main/KeySystem"))()
     end)
     MCSSection:Button("🟩Beluse Hub", function(v)
-        game.StarterGui:SetCore("SendNotification", {Title = "Loading Beluse Hub", Text = "Beluse Hub Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
         loadstring(game:HttpGet('https://raw.githubusercontent.com/beliveri12/BeluseHub/main/Loader.lua', true))()
     end)
     MCSSection:Button("🟩KeyBrew Hub (Key)", function(v)
-        game.StarterGui:SetCore("SendNotification", {Title = "Loading Keybrew Hub", Text = "Keybrew Hub Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
         loadstring(game:HttpGet("https://raw.githubusercontent.com/borntodiekuv/KeybrewHub/main/Main"))()
     end)
     MCSSection:Button("🟩SRM Hub (KEY)", function(v)
-        game.StarterGui:SetCore("SendNotification", {Title = "Loading SRM Hub", Text = "SRM Hub Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
         loadstring(game:HttpGet("https://raw.githubusercontent.com/bebedi15/SRM-Scripts/main/Bebedi9960/SRMHub"))()
     end)
 
@@ -497,15 +391,12 @@ end)
     BeeSwarmSimulator:Label("🟩 Working! 🟧 Getting A Rework 🟥 Patched!", function(v)
 end)
     BeeSwarmSimulator:Button("🟩Chocmoc", function(v)
-        game.StarterGui:SetCore("SendNotification", {Title = "Loading chocmoc", Text = "chocmoc Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
         loadstring(game:HttpGet("https://roblox.servegame.com/roblox_bss/chocmoc.lua"))()
     end)
     BeeSwarmSimulator:Button("🟩Kocmoc", function(v)
-        game.StarterGui:SetCore("SendNotification", {Title = "Loading Kocmoc", Text = "Kocmoc Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Boxking776/kocmoc/main/kocmoc-remastered.lua"))()
     end)
     BeeSwarmSimulator:Button("🟩Bee Swarm Sim Gui", function(v)
-        game.StarterGui:SetCore("SendNotification", {Title = "Loading Bee Swarm Sim Gui", Text = "Bee Swarm Sim Gui Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
         loadstring(game:GetObjects("rbxassetid://4384103988")[0X1].Source)("Pepsi Swarm")
     end)
 
@@ -516,15 +407,12 @@ end)
     BedwarsSection:Label("🟩 Working! 🟧 Getting A Rework 🟥 Patched!", function(v)
     end)
     BedwarsSection:Button("🟩Vape V4", function(v)
-        game.StarterGui:SetCore("SendNotification", {Title = "Loading VapeV4", Text = "Vape4 Loading Shortly", Icon = "rbxassetid://10007425381", Duration = 4})
         loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
     end)
-    BedwarsSection:Button("🟥🟧Future Gui", function(v)
-        game.StarterGui:SetCore("SendNotification", {Title = "Loading Future", Text = "Future Loading Shortly", Icon = "rbxassetid://10007425381", Duration = 4})
+    BedwarsSection:Button("🤷‍♂️🟧EngoWare", function(v)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/joeengo/Future/main/loadstring.lua', true))()
     end)
     BedwarsSection:Button("🟩Noboline", function(v)
-        game.StarterGui:SetCore("SendNotification", {Title = "Loading Noboline", Text = "Noboline Loading Shortly", Icon = "rbxassetid://10007425381", Duration = 4})
         shared.nobolineupdate = true
         loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
     end)
