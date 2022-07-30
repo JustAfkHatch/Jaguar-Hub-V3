@@ -18,20 +18,12 @@
     ChangeLogsSection:Label("Removed Scripts & Also Renewed Some Scripts", function(Red)
     end)
     ChangeLogsSection:Label("Changed Some Things too!", function(Red)
-    end)
+ end)
 
-    local ScriptBlox = Tab:Channel("ScriptBlox Scripts")
-    ScriptBlox:Label("🟩 Working! 🟧 Getting A Rework 🟥 Patched!", function(v)
+    local MainSection = Tab:Channel("Other Scripts")
+    MainSection:Label("🟩 Working! 🟧 In Development 🟥 Patched!", function(v)
     end)
-    ScriptBlox:Label("More Coming Soon!", function(v)
-    end)
-    ScriptBlox:Button("🟩Chat Bypasser", function(v)
-	loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
-    end)
-    ScriptBlox:Button("🟩Auto Clicker", function(v)
-        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/ROBLOX_AutoClicker"))()
-    end)
-    ScriptBlox:Button("🟩Chat Translator", function(v)
+MainSection:Button("🟩Chat Translator", function(v)
     loadstring(game:HttpGetAsync('https://i.qts.life/r/ChatInlineTranslator.lua', true))()
 --[[
 af = "Afrikaans",
@@ -140,13 +132,6 @@ af = "Afrikaans",
     zu = "Zulu"
 --]]
 end)
-
-    local MainSection = Tab:Channel("Other Scripts")
-    MainSection:Label("🟩 Working! 🟧 In Development 🟥 Patched!", function(v)
-    end)
-    MainSection:Button("🟩V Hub", function(v)
-        loadstring(game:HttpGet(('https://raw.githubusercontent.com/itsyaboivincentt5315/script/main/VHub.txt'),true))()
-    end)
     MainSection:Button("🟩BobloxScripts", function(v)
         game.StarterGui:SetCore("SendNotification", {Title = "Loading BobloxScripts", Text = "Boblox Scripts Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
         loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter/BobloxScripts/main/loader"))()
