@@ -1,19 +1,19 @@
-    -- Jaguar Hub Version 3.3.3dr Discord Lib
+    -- Power Hub Version 3.3.3dr Discord Lib
 
-    wait(1)
+    wait(0.6)
 
     local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord"))()
-    local window = library:Window("👑 Jaguar Hub Version 3.3.3dr 👑")
+    local window = library:Window("👑 Power Software Version 3.3.3dr 👑")
 
 
     -- Main
 
     wait(0.4)
-    game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Checking Version = 3.3.3dr", Icon = "rbxassetid://9964802419", Duration = 4})
-    wait(0.1)
-    game.StarterGui:SetCore("SendNotification", {Title = "Enjoy Noobs 👶", Text = "Jaguar Hub Finished Loading!", Icon = "rbxassetid://9964802419", Duration = 4})
+    game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Checking Version = (3.3.3dr)", Icon = "rbxassetid://10425084253", Duration = 5})
+    wait(0.2)
+    game.StarterGui:SetCore("SendNotification", {Title = "Enjoy Noobs 👶", Text = "Power Software Finished Loading!", Icon = "rbxassetid://10425084253", Duration = 5})
 
-    local Tab = window:Server("Jaguar Hub", "rbxassetid://9964802419")
+    local Tab = window:Server("Power Software", "rbxassetid://10425084253 ")
     local ChangeLogsSection = Tab:Channel("ChangeLogs")
     ChangeLogsSection:Label("Added TR1V5 Software V4 (Most of the Scripts are Still in Beta)", function(Red)
     end)
