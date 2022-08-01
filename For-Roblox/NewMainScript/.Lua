@@ -1,142 +1,27 @@
-    -- Power Hub Version 3.3.3dr Discord Lib
+    -- Power Software V3.5 Discord Lib
 
     wait(0.6)
 
     local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord"))()
-    local window = library:Window("👑 Power Software Version 3.3.3dr 👑")
+    local window = library:Window("Power Software V3.5")
 
 
     -- Main
 
     wait(0.4)
-    game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Checking Version = (3.3.3dr)", Icon = "rbxassetid://10425084253", Duration = 5})
+    game.StarterGui:SetCore("SendNotification", {Title = "Version Up To Date!", Text = "Checking Version = (3.5)", Icon = "rbxassetid://10425084253", Duration = 5})
     wait(0.2)
-    game.StarterGui:SetCore("SendNotification", {Title = "Enjoy Noobs 👶", Text = "Power Software Finished Loading!", Icon = "rbxassetid://10425084253", Duration = 5})
+    game.StarterGui:SetCore("SendNotification", {Title = "👑 Enjoy Energys 👑", Text = "Power Software Finished Loading!", Icon = "rbxassetid://10425084253", Duration = 5})
 
     local Tab = window:Server("Power Software", "rbxassetid://10425084253 ")
     local ChangeLogsSection = Tab:Channel("ChangeLogs")
     ChangeLogsSection:Label("Added TR1V5 Software V4 (Most of the Scripts are Still in Beta)", function(Red)
     end)
-    ChangeLogsSection:Label("Deleted Alot of Scripts (PSX) (Some Ms2)", function(Red)
-    end)
-    ChangeLogsSection:Label("Added zylex Config", function(Red)
+    ChangeLogsSection:Label("Added All of the Scripts back (PSX)", function(Red)
     end)
 
     local MainSection = Tab:Channel("Other Scripts")
     MainSection:Label("🟩 Working! 🟧 In Development 🟥 Patched!", function(v)
-    end)
-MainSection:Button("🟩Chat Translator", function(v)
-    loadstring(game:HttpGetAsync('https://i.qts.life/r/ChatInlineTranslator.lua', true))()
---[[
-af = "Afrikaans",
-    sq = "Albanian",
-    am = "Amharic",
-    ar = "Arabic",
-    hy = "Armenian",
-    az = "Azerbaijani",
-    eu = "Basque",
-    be = "Belarusian",
-    bn = "Bengali",
-    bs = "Bosnian",
-    bg = "Bulgarian",
-    ca = "Catalan",
-    ceb = "Cebuano",
-    ny = "Chichewa",
-    ['zh-cn'] = "Chinese Simplified",
-    ['zh-tw'] = "Chinese Traditional",
-    co = "Corsican",
-    hr = "Croatian",
-    cs = "Czech",
-    da = "Danish",
-    nl = "Dutch",
-    en = "English",
-    eo = "Esperanto",
-    et = "Estonian",
-    tl = "Filipino",
-    fi = "Finnish",
-    fr = "French",
-    fy = "Frisian",
-    gl = "Galician",
-    ka = "Georgian",
-    de = "German",
-    el = "Greek",
-    gu = "Gujarati",
-    ht = "Haitian Creole",
-    ha = "Hausa",
-    haw = "Hawaiian",
-    iw = "Hebrew",
-    hi = "Hindi",
-    hmn = "Hmong",
-    hu = "Hungarian",
-    is = "Icelandic",
-    ig = "Igbo",
-    id = "Indonesian",
-    ga = "Irish",
-    it = "Italian",
-    ja = "Japanese",
-    jw = "Javanese",
-    kn = "Kannada",
-    kk = "Kazakh",
-    km = "Khmer",
-    ko = "Korean",
-    ku = "Kurdish (Kurmanji)",
-    ky = "Kyrgyz",
-    lo = "Lao",
-    la = "Latin",
-    lv = "Latvian",
-    lt = "Lithuanian",
-    lb = "Luxembourgish",
-    mk = "Macedonian",
-    mg = "Malagasy",
-    ms = "Malay",
-    ml = "Malayalam",
-    mt = "Maltese",
-    mi = "Maori",
-    mr = "Marathi",
-    mn = "Mongolian",
-    my = "Myanmar (Burmese)",
-    ne = "Nepali",
-    no = "Norwegian",
-    ps = "Pashto",
-    fa = "Persian",
-    pl = "Polish",
-    pt = "Portuguese",
-    pa = "Punjabi",
-    ro = "Romanian",
-    ru = "Russian",
-    sm = "Samoan",
-    gd = "Scots Gaelic",
-    sr = "Serbian",
-    st = "Sesotho",
-    sn = "Shona",
-    sd = "Sindhi",
-    si = "Sinhala",
-    sk = "Slovak",
-    sl = "Slovenian",
-    so = "Somali",
-    es = "Spanish",
-    su = "Sundanese",
-    sw = "Swahili",
-    sv = "Swedish",
-    tg = "Tajik",
-    ta = "Tamil",
-    te = "Telugu",
-    th = "Thai",
-    tr = "Turkish",
-    uk = "Ukrainian",
-    ur = "Urdu",
-    uz = "Uzbek",
-    vi = "Vietnamese",
-    cy = "Welsh",
-    xh = "Xhosa",
-    yi = "Yiddish",
-    yo = "Yoruba",
-    zu = "Zulu"
---]]
-end)
-    MainSection:Button("🟩BobloxScripts", function(v)
-        game.StarterGui:SetCore("SendNotification", {Title = "Loading BobloxScripts", Text = "Boblox Scripts Loading Shortly", Icon = "rbxassetid://10003745041", Duration = 4})
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter/BobloxScripts/main/loader"))()
     end)
     MainSection:Button("🟩Dex Explorer", function(v)
         loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
@@ -207,62 +92,6 @@ end)
     chatFrame.ChatChannelParentFrame.Visible = true
     chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
     end)
-    MainSection:Button("🟩Big Head (Requires R15 and Rthro Head!)", function(v)
-    --Shit ass script made by failedmite57926
-
-    local LocalPlayer = game:GetService("Players").LocalPlayer
-    local Character = LocalPlayer.Character
-    local Humanoid = Character:FindFirstChildOfClass("Humanoid")
-
-    function rm()
-        for i,v in pairs(Character:GetDescendants()) do
-            if v:IsA("BasePart") then
-                if v.Name == "Handle" or v.Name == "Head" then
-                    if Character.Head:FindFirstChild("OriginalSize") then
-                        Character.Head.OriginalSize:Destroy()
-                    end
-                else
-                    for i,cav in pairs(v:GetDescendants()) do
-                        if cav:IsA("Attachment") then
-                            if cav:FindFirstChild("OriginalPosition") then
-                                cav.OriginalPosition:Destroy()  
-                            end
-                        end
-                    end
-                    v:FindFirstChild("OriginalSize"):Destroy()
-                    if v:FindFirstChild("AvatarPartScaleType") then
-                        v:FindFirstChild("AvatarPartScaleType"):Destroy()
-                    end
-                end
-            end
-        end
-    end
-
-    rm()
-    wait(0.5)
-    Humanoid:FindFirstChild("BodyProportionScale"):Destroy()
-    wait(1)
-
-    rm()
-    wait(0.5)
-    Humanoid:FindFirstChild("BodyHeightScale"):Destroy()
-    wait(1)
-
-    rm()
-    wait(0.5)
-    Humanoid:FindFirstChild("BodyWidthScale"):Destroy()
-    wait(1)
-
-    rm()
-    wait(0.5)
-    Humanoid:FindFirstChild("BodyDepthScale"):Destroy()
-    wait(1)
-
-    rm()
-    wait(0.5)
-    Humanoid:FindFirstChild("HeadScale"):Destroy()
-    wait(1)
-    end)
     MainSection:Button("🟩Inf Jump", function(v)
     local InfiniteJumpEnabled = true
     game:GetService("UserInputService").JumpRequest:connect(function()
@@ -289,6 +118,113 @@ end)
     MainSection:Button("🟩R6 Admin", function(v)
         loadstring(game:HttpGet("https://pastebin.com/raw/CKbPg9NC", true))()
     end)
+
+-- Pet Simulator X
+
+
+    local PSXSection = Tab:Channel("Pet Simulator X")
+    PSXSection:Label("🟩 Working! 🟧 In Development 🟥 Patched!", function(v)
+    end)
+    PSXSection:Button("🟩 Huge Games", function(v)
+    getgenv().AuthKey="HUGE_wDp2O6304GTlCH0n"
+    getgenv().LoadSettings={
+    UseSeperateSaves=false
+}
+    loadstring(game:HttpGet("https://HugeGames.io/script"))()
+    end)
+    PSXSection:Button("🟩 Vestra Hub V5", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xandudiscord/vestra/main/loader.lua"))()
+    end)
+    PSXSection:Button("🟩 MasterHub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/destylol/masterhubv311/itachi/Main.lua"))()
+    end)
+    PSXSection:Button("🟩 TR1V5 Software", function(v)
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/TR1V5/TR1V5-Software-V4/main/Games/Pet%20Simulator%20X"))()
+    end)
+    PSXSection:Button("🟩 Kelp Hub (Key)", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/MaGiXxScripter/Cum-Hub/main/loader'))()
+    end)
+    PSXSection:Button("🟩 Moonlight Hub", function(v)
+	loadstring(game:HttpGet('https://cookie-hosting.xyz/Roblox/Moonlight/Loader.lua'))()
+    end)
+    PSXSection:Button("🟩 Psx Gui", function(v)
+	loadstring(game:HttpGet("https://robloxhubop.ml/raw/leranebimu"))()
+    end)
+    PSXSection:Button("🟩 HoHo Hub", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+    end)
+    PSXSection:Button("🟩 Extreme Hub", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ExtremeAntonis/KeySystemUI/main/KeySystemUI-Obfuscated.lua"))()
+    end)
+    PSXSection:Button("🟩 Project Meow", function(v)
+        loadstring(game:HttpGet"https://raw.githubusercontent.com/L1ZOT/Neverlose/main/Project-Meow_TEMP")()
+    end)
+    PSXSection:Button("🟩 Shiny Tool", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/Shiny-Tool/main/ShinyTool.lua"))()
+    end)
+    PSXSection:Button("🟩 VG Hub", function(v)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+    end)
+    PSXSection:Button("🟩 BK", function(v)
+    	loadstring(game:HttpGet("https://raw.githubusercontent.com/BLACKGAMER1221/Pet-Simulator-X/main/BK%20Pet.lua"))()
+    end)
+    PSXSection:Button("🟩 Ultra Hub", function(v)
+    	loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaRdoOx/Ultra-Hub/main/Main"))()
+    end)
+PSXSection:Button("🟩Void Hub", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Wind596/VoidHub/main/WiningDediy", true))()
+end)
+PSXSection:Button("🟩OW Menu", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/inceldom/scrip/main/load",true))()
+end)
+PSXSection:Button("🟩Dino Hub", function(v)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/script/main/psx'))()
+end)
+PSXSection:Button("🟩Xtools", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Boxking776/GrubHub/main/free/PSXFree.lua"))()
+end)
+PSXSection:Button("🟩PetSimX", function(v)
+    loadstring(game:GetObjects("rbxassetid://8194485654")[1].Source)("Petsi-X")
+end)
+PSXSection:Button("🟩Uranium Hub", function(v)
+    loadstring(game:HttpGet("https://uraniumhub.tk/storage/script.lua", true))()
+end)
+PSXSection:Button("🟩Maxx Hub", function(v)
+    loadstring(game:HttpGet(("https://aizen.ml/uploads/petsimx.txt")))()
+end)
+PSXSection:Button("🟩Floppa Hub", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Schervi/FloppaHub/main/FloppaHubMain.lua"))()
+end)
+PSXSection:Button("🟩AmGeranrd Gui", function(v)
+    loadstring(game:HttpGet('https://pastebin.com/raw/fttSzNs8'))()
+end)
+PSXSection:Button("🟩Nulltrp Gui", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MrKix/nullptrpsx/main/psxloadstring.lua"))()
+end)
+PSXSection:Button("🟩Proxo", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/si1nnx/psxx/main/g"))()
+end)
+PSXSection:Button("🟩Ez Pet", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua"))()
+end)
+PSXSection:Button("🟩kj Hub", function(v)
+    loadstring(game.HttpGet(game,"https://raw.githubusercontent.com/KiJinGaming/FreeScript/main/KJHub.lua"))();
+end)
+PSXSection:Button("🟩 Mukuro Hub", function(v)
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
+end)
+PSXSection:Button("🟩 Ghost Hub", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRUs/Ryans/main/Ghosthub.lua"))()
+end)
+PSXSection:Button("🟩 Proxo Hub", function(v)
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/sinnx32/prx/main/Petsim")()
+end)
+PSXSection:Button("🟩 Black trip", function(v)
+    loadstring(game:HttpGet("https://pastebin.com/raw/BdvUGb2q"))()
+end)
+PSXSection:Button("🟩Plasma Hub", function(v)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/RubyBoo4life/Scripts/main/LOADER.vis'))()
+end)
 
     -- Mining Simulator 2
 
@@ -501,48 +437,6 @@ loadstring(game:HttpGet("https://HugeGames.io/ms2"))()
     end)
     JailBreak:Button("🟩Monkey", function(v)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/JailMonkey.lua"))()
-    end)
-
-
--- Pet Simulator X
-
-
-    local PSXSection = Tab:Channel("Pet Simulator X")
-    PSXSection:Label("🟩 Working! 🟧 In Development 🟥 Patched!", function(v)
-    end)
-    PSXSection:Button("🟩MasterHub", function(v)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/destylol/masterhubv311/itachi/Main.lua"))()
-    end)
-    PSXSection:Button("🟩TR1V5 Software", function(v)
-        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/TR1V5/TR1V5-Software-V4/main/Main"))()
-    end)
-    PSXSection:Button("🟩Vestra Hub", function(v)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/xandudiscord/vestra/main/loader.lua"))()
-    end)
-    PSXSection:Button("🟩 Kelp Hub (Key)", function(v)
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/MaGiXxScripter/Cum-Hub/main/loader'))()
-    end)
-    PSXSection:Button("🟩Extreme Hub", function(v)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ExtremeAntonis/KeySystemUI/main/KeySystemUI-Obfuscated.lua"))()
-    end)
-    PSXSection:Button("🟩Project Meow", function(v)
-        loadstring(game:HttpGet"https://raw.githubusercontent.com/L1ZOT/Neverlose/main/Project-Meow_TEMP")()
-    end)
-    PSXSection:Button("🟩BK", function(v)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/BLACKGAMER1221/Pet-Simulator-X/main/BK%20Pet.lua"))()
-    end)
-    PSXSection:Button("🟩Huge Games", function(v)
-    getgenv().AuthKey="HUGE_wDp2O6304GTlCH0n"
-    getgenv().LoadSettings={
-    UseSeperateSaves=false
-}
-    loadstring(game:HttpGet("https://HugeGames.io/script"))()
-    end)
-    PSXSection:Button("🟩Shiny Tool", function(v)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/Shiny-Tool/main/ShinyTool.lua"))()
-    end)
-    PSXSection:Button("🟩VG Hub", function(v)
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
     end)
 
 
