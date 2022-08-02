@@ -17,7 +17,7 @@
     local ChangeLogsSection = Tab:Channel("ChangeLogs")
     ChangeLogsSection:Label("Added TR1V5 Software V4 (Most of the Scripts are Still in Beta)", function(Red)
     end)
-    ChangeLogsSection:Label("Removed some of the (PSX) Scripts", function(Red)
+    ChangeLogsSection:Label("Added Saza Hub V2 To (PSX)", function(Red)
     end)
 
     local MainSection = Tab:Channel("Other Scripts")
@@ -143,6 +143,9 @@
     end)
     PSXSection:Button("🟩 Kelp Hub (Key)", function(v)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/MaGiXxScripter/Cum-Hub/main/loader'))()
+    end)
+    PSXSection:Button("🟩 Saza Hub V2", function(v)
+	loadstring(game:HttpGet"https://raw.githubusercontent.com/QwertyzSZ/SazaSoftware/main/ScriptLoader.saza")()
     end)
     PSXSection:Button("🟩 Moonlight Hub", function(v)
 	loadstring(game:HttpGet('https://cookie-hosting.xyz/Roblox/Moonlight/Loader.lua'))()
